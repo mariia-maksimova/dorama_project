@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 rm(list = ls())
 library(shiny)
 
@@ -37,3 +38,6 @@ server<-function(input, output){
 
 runApp(list(ui = ui, server = server))
             
+=======
+library(shiny)
+>>>>>>> 697b9073e6355ca448b24c200f183b6543b2696a
