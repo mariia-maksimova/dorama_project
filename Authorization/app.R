@@ -86,10 +86,7 @@ server = (function(input, output,session) {
       })
       
       
-      
-      
-      
-      observeEvent(input$button_in_genres,
+       observeEvent(input$button_in_genres,
                    {output$page<-renderUI({
                      
                      ui3()})}
