@@ -12,7 +12,9 @@ ui1 <- function(){
                   passwordInput("passwd", "Password"),
                   br(),actionButton("Login", "Log in"))),
     tags$style(type="text/css", "#login {font-size:10px;   text-align: left;position:absolute;top: 40%;left: 50%;margin-top: -100px;margin-left: -150px;}")
-  )}
+  )
+ 
+  }
 
 ui2 <- function(){ 
   tagList(
@@ -39,22 +41,29 @@ ui3<- function(){tagList(
                     actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
 ) }
 
-ui4<-function(){tagList(div( fluidRow(column(width = 4,renderDataTable({input$userName})),
-                                      column(width = 4, offset = 3)),
-                             fluidRow(column(width = 4))
-) 
+ui4<-function(){fluidPage(
   
-)}
+      titlePanel("Step 4 : Choice making"),
+      sidebarLayout(
+        sidebarPanel(("Testing the data collecting"), ""),
+        mainPanel(("Personal info"),dataTableOutput("userinfo"))))
+  
+  
+  #div( fluidRow(
+                              ##column(width = 4,tableOutput("userinfo")),
+          #                   column(width = 4, offset = 3)),
+                             #fluidRow(column(width = 4))
+  }
 
 ui = (htmlOutput("page"))
 
 
 server = (function(input, output,session) {
 
-  
+ 
   
   USER <- reactiveValues(Logged = Logged)
-  
+  values<-reactiveValues()
   observe({ 
     if (USER$Logged == FALSE) {
       if (!is.null(input$Login)) {
@@ -81,27 +90,36 @@ server = (function(input, output,session) {
     }
     if (USER$Logged == TRUE) 
     {
+      newLine <- isolate(c(input$userName))
       output$page <- renderUI({ ui2()
         #div(class="outer",do.call(navbarPage,c(ui2())))
-      })
+        
+        })
       
       
        observeEvent(input$button_in_genres,
+                    
+                    #newLine<-
                    {output$page<-renderUI({
                      
                      ui3()})}
         )
       
       
-     output$userName<- renderDataTable({input$userNane})
+       
+     output$userinfo<- renderDataTable({list(input$userName, input$genres)})
       
+       
       observeEvent(input$button_in_stories,{output$page<-renderUI({
         
         ui4()})
+      
+      
       })
       
       
-
+      
+      
       print(ui)
       
 
