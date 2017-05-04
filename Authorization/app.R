@@ -1,6 +1,6 @@
 rm(list = ls())
 library(shiny)
-
+fields <- c("userName", "passwd", "genres")
 Logged = FALSE;
 
 
@@ -45,8 +45,8 @@ ui4<-function(){fluidPage(
   
       titlePanel("Step 4 : Choice making"),
       sidebarLayout(
-        sidebarPanel(("Testing the data collecting"), ""),
-        mainPanel(("Personal info"),dataTableOutput("userinfo"))))
+        sidebarPanel(("Testing the data collecting"), "newLine"),
+        mainPanel(("Personal info"),DT::dataTableOutput("responses"))))
   
   
   #div( fluidRow(
@@ -60,7 +60,21 @@ ui = (htmlOutput("page"))
 
 server = (function(input, output,session) {
 
- 
+  saveData <- function(data) {
+    data <- as.data.frame(t(data))
+    if (exists("responses")) {
+      responses <<- rbind(responses, data)
+    } else {
+      responses <<- data
+    }
+  }
+  
+  loadData <- function() {
+    if (exists("responses")) {
+      responses
+    }
+  }
+  
   
   USER <- reactiveValues(Logged = Logged)
   values<-reactiveValues()
@@ -90,35 +104,47 @@ server = (function(input, output,session) {
     }
     if (USER$Logged == TRUE) 
     {
-      newLine <- isolate(c(input$userName))
+    #  newLine <- isolate(c(input$userName))
       output$page <- renderUI({ ui2()
         #div(class="outer",do.call(navbarPage,c(ui2())))
         
         })
       
+      formData <- reactive({
+        data <- sapply(fields, function(x) input[[x]])
+        data
+        })
       
        observeEvent(input$button_in_genres,
-                    
-                    #newLine<-
-                   {output$page<-renderUI({
+      {#newLine<-rbind(newLine, isolate(c(input$genres)))
+        
+        saveData(formData())
+        
+        output$page<-renderUI({
                      
                      ui3()})}
         )
       
       
        
-     output$userinfo<- renderDataTable({list(input$userName, input$genres)})
+    # output$userinfo<- renderDataTable({list(input$userName, input$genres)})
       
        
-      observeEvent(input$button_in_stories,{output$page<-renderUI({
-        
-        ui4()})
-      
-      
+       
+      observeEvent(input$button_in_stories,
+     {#newLine<-rbind(newLine, input$stories)
+       output$page<-renderUI({
+      ui4()})
       })
       
       
+      output$responses <- DT::renderDataTable({
+        input$button_in_stories
+        loadData()
+      })     
       
+      
+     # output$info<- renderDataTable(isolate(c(input$userName, input$genres)))
       
       print(ui)
       
