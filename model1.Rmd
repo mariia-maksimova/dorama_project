@@ -1,0 +1,172 @@
+---
+title: "Rec1"
+author: "Porozova Veronica"
+date: "03 05 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(recommenderlab)
+
+rrm<- as(  as(matrix_rates_crop_1, "matrix")   , "realRatingMatrix")
+similarity_users10 <- similarity(rrm[1:10, ], method = "cosine", which = "users")
+as.matrix(similarity_users10)
+
+image(as.matrix(similarity_users10), main = "User similarity")
+
+library(ggplot2)
+ggplot(data = data.frame(filmRate=colCounts(rrm))) + geom_histogram(aes(x=filmRate))
+
+ggplot(data = data.frame(userRate=rowCounts(rrm))) + geom_histogram(aes(x=userRate))
+
+ratings_movies <- rrm[rowCounts(rrm) > 10,
+colCounts(rrm) > 100] 
+ratings_movies
+
+average_ratings_per_user <- rowMeans(ratings_movies)
+ggplot()+geom_histogram(aes(x=average_ratings_per_user)) +
+ggtitle("Распределение средних оценок пользователей")
+
+set.seed(100)
+test_ind <- sample(1:nrow(ratings_movies), size = nrow(ratings_movies)*0.2)
+recc_data_train <- ratings_movies[-test_ind, ]
+recc_data_test <- ratings_movies[test_ind, ]
+
+recommender_models <- recommenderRegistry$get_entries(dataType =
+"realRatingMatrix")
+recommender_models$IBCF_realRatingMatrix$parameters
+
+
+recc_model <- Recommender(data = recc_data_train, method = "IBCF",
+parameter = list(k = 30))
+recc_model
+
+recc_model1 <- Recommender(data = recc_data_train, method = "UBCF",
+parameter = list(k = 30))
+recc_model1
+
+model_details <- getModel(recc_model)
+model_details$description
+model_details$sim[1:5, 1:5]
+
+```
+
+
+
+```{r}
+recc_predicted <- predict(object = recc_model, newdata = recc_data_test, n = 6)
+recc_predicted
+```
+
+Посмотрим на результат
+```{r}
+str(recc_predicted)
+```
+
+
+Рекомендации для первого пользователя
+```{r}
+recc_user_1 <- recc_predicted@items[[1]]
+recc_user_1
+movies_user_1 <- recc_predicted@itemLabels[recc_user_1]
+movies_user_1
+```
+
+Общая матрица рекомендаций для пользователей
+```{r}
+recc_matrix <- sapply(recc_predicted@items, function(x){
+colnames(ratings_movies)[x]
+})
+dim(recc_matrix)
+```
+
+
+#Сравнение моделей
+
+
+```{r}
+percentage_training <- 0.8
+items_to_keep <- 15
+rating_threshold <- 3
+n_eval <-1
+  
+set.seed(100)
+eval_sets <- evaluationScheme(data = ratings_movies, method = "split",
+train = percentage_training, given = items_to_keep, goodRating = rating_threshold, k = n_eval) 
+
+```
+
+```{r}
+getData(eval_sets, "train")
+```
+
+
+```{r}
+library(ggplot2)
+qplot(rowCounts(getData(eval_sets, "unknown"))) + geom_histogram(binwidth = 1) + ggtitle("unknown items by the users")
+```
+
+
+```{r}
+model_to_evaluate <- "IBCF"
+model_parameters <- NULL
+
+eval_recommender <- Recommender(data = getData(eval_sets, "train"),
+method = model_to_evaluate, parameter = model_parameters)
+```
+
+```{r}
+items_to_recommend <- 20
+eval_prediction <- predict(object = eval_recommender, newdata =
+getData(eval_sets, "known"), n = items_to_recommend, type = "ratings")
+```
+
+
+```{r}
+eval_accuracy <- calcPredictionAccuracy(
+ x = eval_prediction, data = getData(eval_sets, "unknown"), byUser =
+TRUE)
+head(eval_accuracy)
+```
+
+```{r}
+eval_accuracy <- calcPredictionAccuracy(
+ x = eval_prediction, data = getData(eval_sets, "unknown"), byUser =
+FALSE)
+eval_accuracy
+```
+
+
+```{r}
+results <- evaluate(x = eval_sets, method = model_to_evaluate, n =c(1, seq(10, 100, 10)))
+head(getConfusionMatrix(results)[[1]])
+```
+
+
+```{r}
+models_to_evaluate <- list(
+ IBCF_cos = list(name = "IBCF", param = list(method =
+ "cosine")),
+ IBCF_cor = list(name = "IBCF", param = list(method =
+ "pearson")),
+ UBCF_cos = list(name = "UBCF", param = list(method =
+ "cosine")),
+ UBCF_cor = list(name = "UBCF", param = list(method =
+ "pearson")),
+ random = list(name = "RANDOM", param=NULL), 
+ popular = list(name = "POPULAR", param=NULL),
+ svd = list(name = "SVD", param=NULL)
+)
+```
+
+
+```{r}
+n_recommendations <- c(1, 5, seq(10, 200, 10))
+list_results <- evaluate(x = eval_sets, method = models_to_evaluate, n
+= n_recommendations)
+```
+
+```{r}
+plot(list_results, annotate = 1, legend = "topleft") 
+```
+
