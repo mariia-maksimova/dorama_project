@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 library(recommenderlab)
 
+
 rrm<- as(  as(matrix_rates_crop_1, "matrix")   , "realRatingMatrix")
 similarity_users10 <- similarity(rrm[1:10, ], method = "cosine", which = "users")
 as.matrix(similarity_users10)
