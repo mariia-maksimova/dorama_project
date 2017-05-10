@@ -1,6 +1,6 @@
 rm(list = ls())
 library(shiny)
-fields <- c("userName", "passwd", "genres")
+fields <- c("userName", "passwd", "genres", "stories")
 Logged = FALSE;
 
 
@@ -44,9 +44,8 @@ ui3<- function(){tagList(
 ui4<-function(){fluidPage(
   
       titlePanel("Step 4 : Choice making"),
-      sidebarLayout(
-        sidebarPanel(("Testing the data collecting"), "newLine"),
-        mainPanel(("Personal info"),DT::dataTableOutput("responses"))))
+     
+        wellPanel("Personal info",DT::dataTableOutput("responses")))
   
   
   #div( fluidRow(
@@ -118,7 +117,7 @@ server = (function(input, output,session) {
        observeEvent(input$button_in_genres,
       {#newLine<-rbind(newLine, isolate(c(input$genres)))
         
-        saveData(formData())
+       #saveData(formData())
         
         output$page<-renderUI({
                      
@@ -133,6 +132,8 @@ server = (function(input, output,session) {
        
       observeEvent(input$button_in_stories,
      {#newLine<-rbind(newLine, input$stories)
+       
+       saveData(formData())
        output$page<-renderUI({
       ui4()})
       })
