@@ -30,6 +30,8 @@ user_genres[5]=36
 
 ###
 
+#Вывод по пять дорам на каждый из 5 жанр (смотрел-не смотрел)
+
 #вставляем оценки пользователя!!Стыковка!!
 user_data[43]=2
 user_data[443]=5
@@ -63,6 +65,7 @@ library(dplyr)
 KR_rating_full$id=as.numeric(rownames(KR_rating_full))
 dramas=left_join(dorama_ids, KR_rating_full, by='dorama_id')
 
+#Вывод дорам отфильтрованных по жанру (та же самая матрица и смотрится, чтобы хотя б один жанры каждой дорамы был в user_genres)
 
 ###Стыковка
 user_wants=as.data.frame(matrix(nrow=1, ncol=10))
@@ -81,6 +84,7 @@ user_wants$Secrets=9
 
 ###
 
+#После каждого ОК Строится новая таблица drama_filter, в которой есть только дорамы +-1 отличающиеся по оценке и они выводятся
 
 
 
