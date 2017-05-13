@@ -5,7 +5,7 @@ library(dplyr)
 
 #matrix_rates<- as(  as(matrix_rates, "matrix")   , "realRatingMatrix")
 
-save(matrix_rates, file='matrix_rates.RData')
+#save(matrix_rates, file='matrix_rates.RData')
 
 load('matrix_rates.RData')
 
@@ -18,6 +18,17 @@ load('recc_model.RData')
 
 user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
 colnames(user_data)<-colnames(matrix_rates)
+
+###Любимые жанры пользователя!!! Стыковка##
+
+user_genres=as.data.frame(matrix(nrow=1, ncol=5))
+user_genres[1]=6
+user_genres[2]=1
+user_genres[3]=7
+user_genres[4]=35
+user_genres[5]=36
+
+###
 
 #вставляем оценки пользователя!!Стыковка!!
 user_data[43]=2
@@ -47,6 +58,7 @@ recc_user_ratings<-recc_predicted@ratings[[1]]
 dorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)
 dorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))
 
+library(dplyr)
 
 KR_rating_full$id=as.numeric(rownames(KR_rating_full))
 dramas=left_join(dorama_ids, KR_rating_full, by='dorama_id')
@@ -70,16 +82,7 @@ user_wants$Secrets=9
 ###
 
 
-###Любимые жанры пользователя!!! Стыковка##
 
-user_genres=as.data.frame(matrix(nrow=1, ncol=5))
-user_genres[1]=6
-user_genres[2]=1
-user_genres[3]=7
-user_genres[4]=35
-user_genres[5]=36
-
-###
 
 
 

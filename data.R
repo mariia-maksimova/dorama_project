@@ -14,4 +14,3 @@ KR_rating_full <- read_csv("KR_shows_csv.csv")
 
 colnames(KR_rating_full)<-c('dorama_id', 'dorama_title', 'overall_rating', 'watching', 'seasons', 'year', 'genres', 'School',	'History',	'Gender',	'Super',	'Pro',	'Investigation',	'Cinderella',	'Revenge','Friendship','Secrets')
 
-matrix_rates <- read_csv("~/dorama_project/matrix_rates_crop-1.csv")
