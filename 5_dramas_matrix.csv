@@ -1,82 +1,45 @@
 genres;drama 1;drama 2;drama 3;drama 4;drama 5
-1;Mary Stayed Out All Night;The Master's Sun;Kill Me, Heal Me;Flower Boy Ramyun Shop;Coffee Prince
-2;SIXTEEN (JYP);Twenty Years Old;The Queen's Classroom;Rookie King: Channel Bangtan;Seventeen Project
-3; ; ; ; ; 
-4;Healer;Moorim School;Empress Ki;You're All Surrounded;Queen Inhyun's Man
-5;Faith;Queen Inhyun's Man;Missing Nine;The Three Musketeers (SK);The Legend
-6;Mary Stayed Out All Night;I Hear Your Voice;The Master's Sun;Shut Up Flower Boy Band;Coffee Prince
-7;Man from the Stars;Mary Stayed Out All Night;Pinocchio;I Hear Your Voice;The Master's Sun
-8; ; ; ; ; 
-9;Joseon X-Files: Secret Book;Bubblegum Crisis;Bong Soon – a Cyborg in Love;Alien Sam; 
-10;Pinocchio;Bride of the Century;High Society;Oh! My Lady;Angry Mom
-11;Queen Inhyun's Man;Oh! My Lady;SIXTEEN (JYP);NO.MERCY;Star King
-12;Man from the Stars;Pinocchio;I Hear Your Voice;The Master's Sun;Faith
-18;Ma Boy;Oh! My Lady;Hello Baby;The Return of Superman;The Queen's Classroom
-23; ; ; ; ; 
-25;Man from the Stars;I Hear Your Voice;Faith;School 2 15: Who Are You?;Remember You
-26;I Hear Your Voice;The Master's Sun;Healer;W;White Christmas
-27;Jingbirok;King Gwanggaeto the Great;Immortal Lee Soon Shin;Seoul 1945;Comrades
-28;Gu Family Book;Secret Love;Bad Guys;Gap Dong;Signal
-29;Gyeoul Yeonga;Bubblegum Crisis;Scan2Go; ; 
-30;The Master's Sun;Queen Inhyun's Man;Mirror of the Witch;Cheo Yong;Soul
-31;Queen Inhyun's Man;Oh! My Lady;Coffee House;Queen of Ambition;Irreversible Love
-32;Shut Up Flower Boy Band;K-POP - The Ultimate Audition;EXO Next Door;Monstar;Exo Showtime
-33;Explorers Of The Human Body; ; ; ; 
-34;Queen Inhyun's Man;We Got Married;Showtime: Burning the Beast;VIXX One Fine Day;You Are My Oppa
-35;Kill Me, Heal Me;Faith;It's Okay, It's Love;Descendants of the Sun;Emergency Man and Woman
-36;Empress Ki;the King 2 Hearts;Age of feeling: Inspiring generation;The Three Musketeers (SK);Three Days
-37;Exo Showtime;Queen Inhyun's Man;Weekly Idol;Roommate;Show Me The Money (KR)
-38;WIN: Who is Next?;MIX & MATCH;SIXTEEN (JYP);5 Minute Before Chaos;After School Club
-39; ; ; ; ; 
-40; ; ; ; ; 
-41; ; ; ; ; 
-42;Second to Last Love;Medical Gibang Cinema; ; ; 
-43;Explorers Of The Human Body; ; ; ; 
-44;Weightlifting Fairy Kim Bok Joo;Idol Star Athletics Championships;Basketball (2 13);Dream (SBS);Cool Kiz On The Block
-45;Faith;Moon Lovers: Scarlet Heart Ryeo;Sungkyunkwan Scandal;Empress Ki;Queen Inhyun's Man
-46;Magic Hanja; ; ; ; 
-47; ; ; ; ; 
-48;Showtime: Burning the Beast;Saturday Night Live Korea; ; ; 
-49; ; ; ; ; 
-50;Queen Inhyun's Man;SHINee One Fine Day;Fluttering India;Barefoot Friends;B.A.P Attack!
-51; ; ; ; ; 
-52; ; ; ; ; 
-54;Strong Heart;Ta-Dah! It's B.A.P;After School Club;4 Things Show;A Song For You
-55; ; ; ; ; 
-56;Panda and Hedgehog;Pasta;I Order For You;Only You;A Delicious Proposal
-57;Hyoyeon's Million Likes;Style Log;Nail Salon Paris;Cheongdamdong Alice;
-58; ; ; ; ; 
-63; ; ; ; ; 
-69; ; ; ; ; 
-70; ; ; ; ; 
-72; ; ; ; ; 
-75;Feel So Goods; ; ; ; 
-76;Roommate; ; ; ; 
-77; ; ; ; ; 
-82; ; ; ; ; 
-90; ; ; ; ; 
-91; ; ; ; ; 
-92;Hello Counselor;Problematic Men; ; ; 
-93; ; ; ; ; 
-94; ; ; ; ; 
-95; ; ; ; ; 
-96;Show Me The Money (KR);MIX & MATCH;SIXTEEN (JYP);NO.MERCY;VIXX MyDol
-97;History of the Salaryman;Hotelier;Super Rookie; ; 
-98; ; ; ; ; 
-99; ; ; ; ; 
-100; ; ; ; ; 
-101; ; ; ; ; 
-102; ; ; ; ; 
-103; ; ; ; ; 
-104;Paradise Ranch;Birth Of A Family; ; ; 
-105;IRIS;7th Grade Civil Servant;Athena: Goddess of War;Poseidon;Invincible Parachute Agent
-109; ; ; ; ; 
-107; ; ; ; ; 
-108; ; ; ; ; 
-109; ; ; ; ; 
-110; ; ; ; ; 
-111; ; ; ; ; 
-112; ; ; ; ; 
-113;King of Baking, Kim Tak Goo;My Romantic Some Recipe; ; ; 
-114;Solomon's Perjury;Defendant;My Lawyer, Mr. Jo;Punch; 
-115; ; ; ; ; 
+1;11493;32447;41633;29687;17306
+2;43103;38793;32444;39605;43584
+4;39711;45443;34586;37168;26055
+5;26856;26055;52096;38547;2294
+6;11493;32637;32447;25663;17306
+7;34626;11493;39456;32637;32447
+9;39035;48874;52154;51337; 
+10;39456;36057;43421;18305;42684
+11;26055;18305;43103;42125;23153
+12;34626;39456;32637;32447;26856
+18;27278;18305;35352;38561;32444
+25;34626;32637;26856;43044;43655
+26;32637;32447;39711;49950;24329
+27;42234;37257;21052;27713;42921
+28;31761;36566;38788;36947;48213
+29;29603;48874;50866; ; 
+30;32447;26055;49232;34034;27300
+31;26055;18305;27513;30819;38024
+32;25663;25909;42768;32356;35003
+33;30886; ; ; ; 
+34;26055;20531;37155;42311;33059
+35;41633;26856;38015;47638;35619
+36;34586;27399;34609;38547;36061
+37;35003;26055;34753;37510;38652
+38;34914;39169;43103;38570;37706
+42;50274;49551; ; ; 
+43;30886; ; ; ; 
+44;50527;42732;34647;43069;35840
+45;26856;49994;15137;34586;26055
+46;38021; ; ; ; 
+48;37155;39704; ; ; 
+50;26055;32475;42793;32858;38096
+54;20894;31360;37706;43529;44030
+56;29499;31878;43957;6292;35881
+57;43733;41906;32354;29358;
+75;43458; ; ; ; 
+76;37510; ; ; ; 
+92;43374;43335; ; ; 
+96;38652;39169;43103;42125;36207
+97;28895;29321;33233; ; 
+104;29480;43555; ; ; 
+105;5812;30333;12584;44270;49668
+113;34877;51901; ; ; 
+114;51919;52201;48897;46051; 
