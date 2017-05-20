@@ -20,11 +20,11 @@ ui2 <- function(){
   tagList(
     div(id="genre",
     wellPanel(titlePanel("Step 2 :Genres")),
- sidebarLayout(sidebarPanel(checkboxGroupInput("genres", "Genres to choose:", c("Romance" = "romance",
-                                                                               "Drama" = "drama",
-                                                                               "Fantasy" = "fantasy",
-                                                                                "Action"="action",
-                                                                                "Comedy"="comedy"   ))), 
+ sidebarLayout(sidebarPanel(checkboxGroupInput("genres", "Genres to choose:", c("Romance" = "7",
+                                                                               "Drama" = "6",
+                                                                               "Fantasy" = "12",
+                                                                                "Action"="4",
+                                                                                "Comedy"="1"   ))), 
                actionButton(inputId = "button_in_genres",label = "Go", icon = NULL)))
   )
 }
@@ -45,7 +45,9 @@ ui4<-function(){fluidPage(
   
       titlePanel("Step 4 : Choice making"),
      
-        wellPanel("Personal info",DT::dataTableOutput("responses")))
+        wellPanel("Personal info",DT::dataTableOutput("responses")),
+      wellPanel("Bla",DT::dataTableOutput("dramas_matrix_work")),
+      wellPanel("Blabla",DT::dataTableOutput("user_genres")) )
   
   
   #div( fluidRow(
@@ -58,6 +60,23 @@ ui = (htmlOutput("page"))
 
 
 server = (function(input, output,session) {
+  
+  library(recommenderlab)
+  library(dplyr)
+  library(readr)
+  library(registry)
+  
+  setwd("~/dorama_project")
+  getwd()
+  load('matrix_rates.RData')
+  load('recc_model.RData')
+  load('dramas_matrix.RData')
+  load('KR_genres.RData')
+  load('KR_rates.RData')
+  load('KR_rating_full.RData')
+  load('KR_shows.RData')
+  
+  
 
   saveData <- function(data) {
     data <- as.data.frame(t(data))
@@ -119,6 +138,21 @@ server = (function(input, output,session) {
         
        #saveData(formData())
         
+       user_genres <-as.data.frame(matrix(nrow=1, ncol=5))  
+       
+       user_genres<- t(input$genres)
+      # user_genres[is.na(user_genres)] <- 0 
+       
+       output$user_genres<-DT::renderDataTable(user_genres)
+      # output$dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+       #first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+       #first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+       
+       
+       
+       
+       
+       
         output$page<-renderUI({
                      
                      ui3()})}
