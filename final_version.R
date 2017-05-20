@@ -17,7 +17,7 @@ load('KR_shows.RData')
 user_genres=as.data.frame(matrix(nrow=1, ncol=5))
 user_genres[1]=6
 user_genres[2]=1
-user_genres[3]=7
+user_genres[3]=8
 user_genres[4]=35
 user_genres[5]=36
 
