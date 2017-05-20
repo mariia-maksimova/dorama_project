@@ -24,7 +24,7 @@ user_data<-t(user_data)
 user_genres=as.data.frame(matrix(nrow=1, ncol=5))
 user_genres[1]=6
 user_genres[2]=1
-user_genres[3]=7
+user_genres[3]=7 
 user_genres[4]=35
 user_genres[5]=36
 
@@ -73,16 +73,16 @@ library(dplyr)
 KR_rating_full$id=as.numeric(rownames(KR_rating_full))
 KR_rating_full2<-KR_rating_full
 
-m <- gregexpr('[[:digit:]]+', KR_rating_full$genres[1:1248], perl=TRUE)
-genres=regmatches(KR_rating_full$genres[1:1248], m)
-genres<-sapply( genres, as.numeric )
+#m <- gregexpr('[[:digit:]]+', KR_rating_full$genres[1:1248], perl=TRUE)
+#genres=regmatches(KR_rating_full$genres[1:1248], m)
+#genres<-sapply( genres, as.numeric )
 
-for (each in KR_rating_full2$id){
-  if (all(is.element(genres[[each]], user_genres))==FALSE){
-    KR_rating_full2[each,]=NA
-  }
-}
-KR_rating_full2<-na.omit(KR_rating_full2)
+#for (each in KR_rating_full2$id){
+#  if (all(is.element(genres[[each]], user_genres))==FALSE){
+#    KR_rating_full2[each,]=NA
+#  }
+#}
+#KR_rating_full2<-na.omit(KR_rating_full2)
 
 dramas=inner_join(dorama_ids, KR_rating_full2, by='dorama_id')
 
@@ -108,16 +108,16 @@ user_wants$Secrets=4
 
 #После каждого ОК Строится новая таблица drama_filter, в которой есть только дорамы +-1 отличающиеся по оценке и они выводятся
 
-dramas_wants<-filter(dramas, School>=user_wants$School-3, School<=user_wants$School+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$History-3, School<=user_wants$History+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Gender-3, School<=user_wants$Gender+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Super-3, School<=user_wants$Super+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Pro-3, School<=user_wants$Pro+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Investigation-3, School<=user_wants$Investigation+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Cinderella-3, School<=user_wants$Cinderella+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Revenge-3, School<=user_wants$Revenge+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Friendship-3, School<=user_wants$Friendship+3)
-dramas_wants<-filter(dramas_wants, School>=user_wants$Secrets-3, School<=user_wants$Secrets+3)
+dramas_wants<-filter(dramas, School>=user_wants$School-2, School<=user_wants$School+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$History-2, School<=user_wants$History+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Gender-2, School<=user_wants$Gender+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Super-2, School<=user_wants$Super+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Pro-2, School<=user_wants$Pro+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Investigation-2, School<=user_wants$Investigation+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Cinderella-2, School<=user_wants$Cinderella+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Revenge-2, School<=user_wants$Revenge+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Friendship-2, School<=user_wants$Friendship+2)
+dramas_wants<-filter(dramas_wants, School>=user_wants$Secrets-2, School<=user_wants$Secrets+2)
 
 
 

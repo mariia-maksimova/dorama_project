@@ -16,4 +16,6 @@ colnames(KR_rating_full)<-c('dorama_id', 'dorama_title', 'overall_rating', 'watc
 
 
 dramas_matrix <- read_delim("5_dramas_matrix.csv", ";", escape_double = FALSE, trim_ws = TRUE)
+
 colnames(dramas_matrix)<-c('genre_id', 'drama1', 'drama2', 'drama3', 'drama4', 'drama5')
+
