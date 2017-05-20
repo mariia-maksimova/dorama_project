@@ -1,4 +1,4 @@
-library(readr)
+
 KR_genres <- read_delim("KR_genres.csv", "\t", escape_double = FALSE, col_names = FALSE, trim_ws = TRUE)
 colnames(KR_genres)<-c('genre_id', 'genre_title')
 
@@ -19,3 +19,8 @@ dramas_matrix <- read_delim("5_dramas_matrix.csv", ";", escape_double = FALSE, t
 
 colnames(dramas_matrix)<-c('genre_id', 'drama1', 'drama2', 'drama3', 'drama4', 'drama5')
 
+save(dramas_matrix, file='dramas_matrix.RData')
+save(KR_genres, file='KR_genres.RData')
+save(KR_rates, file='KR_rates.RData')
+save(KR_rating_full, file='KR_rating_full.RData')
+save(KR_shows, file='KR_shows.RData')
