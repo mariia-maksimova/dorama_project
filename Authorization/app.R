@@ -45,18 +45,29 @@ ui4<-function(){fluidPage(
   
       titlePanel("Step 4 : Choice making"),
      
-        wellPanel("Personal info",DT::dataTableOutput("responses")),
-      wellPanel("Bla",DT::dataTableOutput("dramas_matrix_work")),
-      wellPanel("Blabla",DT::dataTableOutput("user_genres")) )
+      # wellPanel("Personal info",DT::dataTableOutput("responses")),
+      
+ 
+ 
+  wellPanel("",
+                
+                selectInput(inputId = 'in0', label = 'Choose doramas', 
+                            choices = colnames(titles), 
+                            multiple = TRUE, selectize = TRUE),
+            uiOutput("variables")
+                
+                ))}
+     # wellPanel("Blabla",DT::dataTableOutput("user_genres")) )
   
   
   #div( fluidRow(
                               ##column(width = 4,tableOutput("userinfo")),
           #                   column(width = 4, offset = 3)),
                              #fluidRow(column(width = 4))
-  }
+  
 
 ui = (htmlOutput("page"))
+
 
 
 server = (function(input, output,session) {
@@ -143,10 +154,58 @@ server = (function(input, output,session) {
        user_genres<- t(input$genres)
       # user_genres[is.na(user_genres)] <- 0 
        
+      
        output$user_genres<-DT::renderDataTable(user_genres)
-      # output$dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
-       #first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
-       #first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+       
+       
+       
+      dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+      
+       
+      first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+      
+      
+      
+      first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+      
+      titles<<-as.data.frame(t(first_page_dramas2$dorama_title))
+      colnames(titles) <<- as.character(unlist(titles[1,]))
+      
+      
+      
+      
+      
+      #output$first_page_dramas2<-DT::renderDataTable(first_page_dramas2)
+      
+       
+      for (i in first_page_dramas2) {y<-split( first_page_dramas2, f=first_page_dramas2$dorama_title)
+      }
+      
+      
+      for (i in seq(y))
+      {  assign(paste("df", i, sep = ""), y[[i]])}
+      
+      output$variables <- renderUI({
+        numVar <- length(as.integer(input$in0))
+      
+      lapply(input$in0, function(x) {
+        list(radioButtons(paste0("dynamic",x), x, 
+                          choices = c("Not watch" = "0",
+                                      "Terrible" = "1", 
+                                      "Awful" = "2",
+                                      "Normal" = "3", 
+                                      "Excellent" = "4",
+                                      "Perfect" = "5"
+                                      ), selected = "one"))
+      })
+      })
+      
+       #user vector (doramas)
+       
+       user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
+       colnames(user_data)<-colnames(matrix_rates)
+       user_data<-t(user_data)
+       
        
        
        
