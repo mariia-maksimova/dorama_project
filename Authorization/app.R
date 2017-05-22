@@ -54,16 +54,31 @@ ui3<-function(){fluidPage(
  
                             
 
-ui4<- function(){tagList(
-  div(id="story",
-      wellPanel(titlePanel("Step 4 :Stories")),
-      sidebarLayout(sidebarPanel(checkboxGroupInput("stories", "Stories to choose:", c("Historical" = "historical",
-                                                                                       "Cinderella Story" = "cinderella",
-                                                                                       "Investigation" = "investigation",
-                                                                                       "Secrets of the past"="secrets",
-                                                                                       "Supernatural"="supernatural"))), 
-                    actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
-) }
+ui4<- function(){fluidPage(
+      titlePanel("Step 4 :Stories"),
+      fluidRow(
+       column(6, 
+                              sliderInput("History", "History", min=0, max=10, value=0),
+                              sliderInput("Cinderella", "Cinderella", min=0, max=10, value=0),           
+                              sliderInput("Investigation", "Investigation", min=0, max=10, value=0),
+                              sliderInput("School", "School", min=0, max=10, value=0),
+                               sliderInput("Gender", "Gender", min=0, max=10, value=0)),
+        
+       
+       fluidRow(
+       column(6,
+                              sliderInput("Super", "Supernatural", min=0, max=10, value=0),
+                              sliderInput("Pro", "Professional", min=0, max=10, value=0),
+                              sliderInput("Revenge", "Revenge", min=0, max=10, value=0),
+                              sliderInput("Friendship", "Friendship", min=0, max=10, value=0),
+                              sliderInput("Secrets", "Secrets of the past", min=0, max=10, value=0)))),
+           fluidRow(   
+             column(12,
+                              actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
+                              
+                              
+       
+                    ) }
 
 
 ui = (htmlOutput("page"))
@@ -258,8 +273,10 @@ server = (function(input, output,session) {
       })     
       
       
-     
-      
+      observeEvent(input$button_in_choice,
+                   {output$page<-renderUI({ui4()})
+                   })
+                    
       print(ui)
       
 
