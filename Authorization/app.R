@@ -168,8 +168,8 @@ server = (function(input, output,session) {
       
       first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
       
-      titles<<-as.data.frame(t(first_page_dramas2$dorama_title))
-      colnames(titles) <<- as.character(unlist(titles[1,]))
+      titles<<-as.data.frame(t(first_page_dramas2))
+      colnames(titles) <<- as.character(unlist(titles[2,]))
       
       
       
