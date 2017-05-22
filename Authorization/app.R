@@ -1,6 +1,6 @@
 rm(list = ls())
 library(shiny)
-fields <- c("userName", "passwd", "genres", "stories")
+fields <- c("userName", "passwd")
 Logged = FALSE;
 
 
@@ -30,41 +30,41 @@ ui2 <- function(){
 }
 
 
-ui3<- function(){tagList(
-  div(id="story",
-      wellPanel(titlePanel("Step 3 :Stories")),
-      sidebarLayout(sidebarPanel(checkboxGroupInput("stories", "Stories to choose:", c("Historical" = "historical",
-                                                                                     "Cinderella Story" = "cinderella",
-                                                                                     "Investigation" = "investigation",
-                                                                                     "Secrets of the past"="secrets",
-                                                                                     "Supernatural"="supernatural"))), 
-                    actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
-) }
 
-ui4<-function(){fluidPage(
+ui3<-function(){fluidPage(
   
-      titlePanel("Step 4 : Choice making"),
+      titlePanel("Step 3 : Choice making"),
      
-      # wellPanel("Personal info",DT::dataTableOutput("responses")),
       
  
  
   wellPanel("",
                 
-                selectInput(inputId = 'in0', label = 'Choose doramas', 
+                selectInput(inputId = "in0", label = 'Choose doramas', 
                             choices = colnames(titles), 
                             multiple = TRUE, selectize = TRUE),
-            uiOutput("variables")
+            uiOutput("variables"),
+  wellPanel("", actionButton(inputId = "button_in_choice",label = "Go", icon = NULL)),
+  
+  
+  wellPanel("Personal info",textOutput("dynamic"))
+           
                 
-                ))}
-     # wellPanel("Blabla",DT::dataTableOutput("user_genres")) )
-  
-  
-  #div( fluidRow(
-                              ##column(width = 4,tableOutput("userinfo")),
-          #                   column(width = 4, offset = 3)),
-                             #fluidRow(column(width = 4))
-  
+  ))}
+ 
+                            
+
+ui4<- function(){tagList(
+  div(id="story",
+      wellPanel(titlePanel("Step 4 :Stories")),
+      sidebarLayout(sidebarPanel(checkboxGroupInput("stories", "Stories to choose:", c("Historical" = "historical",
+                                                                                       "Cinderella Story" = "cinderella",
+                                                                                       "Investigation" = "investigation",
+                                                                                       "Secrets of the past"="secrets",
+                                                                                       "Supernatural"="supernatural"))), 
+                    actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
+) }
+
 
 ui = (htmlOutput("page"))
 
@@ -133,9 +133,9 @@ server = (function(input, output,session) {
     }
     if (USER$Logged == TRUE) 
     {
-    #  newLine <- isolate(c(input$userName))
+    
       output$page <- renderUI({ ui2()
-        #div(class="outer",do.call(navbarPage,c(ui2())))
+        
         
         })
       
@@ -145,9 +145,8 @@ server = (function(input, output,session) {
         })
       
        observeEvent(input$button_in_genres,
-      {#newLine<-rbind(newLine, isolate(c(input$genres)))
+      {
         
-       #saveData(formData())
         
        user_genres <-as.data.frame(matrix(nrow=1, ncol=5))  
        
@@ -185,6 +184,13 @@ server = (function(input, output,session) {
       for (i in seq(y))
       {  assign(paste("df", i, sep = ""), y[[i]])}
       
+      
+      
+      user_data<<-matrix(data=NA, ncol = ncol(matrix_rates))
+      colnames(user_data)<<-colnames(matrix_rates)
+      #user_data<<-t(user_data)
+      
+      
       output$variables <- renderUI({
         numVar <- length(as.integer(input$in0))
       
@@ -195,17 +201,31 @@ server = (function(input, output,session) {
                                       "Awful" = "2",
                                       "Normal" = "3", 
                                       "Excellent" = "4",
-                                      "Perfect" = "5"
-                                      ), selected = "one"))
+                                      "Perfect" = "5"),
+                                        selected = "one"))
+       
+       
+         })
+      
+      
       })
-      })
+      
+      
+      
+    #%   for (i in ncol(titles)){
+      #%  user_data[rownames(user_data)==i]<-output$paste("dynamic",i, sep = "")
+    #%  }
+      
       
        #user vector (doramas)
        
-       user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
-       colnames(user_data)<-colnames(matrix_rates)
-       user_data<-t(user_data)
        
+       
+     
+       
+      # user_data<-t(user_data)
+       
+       user_data<-as(user_data,"realRatingMatrix")
        
        
        
@@ -223,22 +243,22 @@ server = (function(input, output,session) {
       
        
        
-      observeEvent(input$button_in_stories,
-     {#newLine<-rbind(newLine, input$stories)
+      observeEvent(input$button_in_genres,
+     {
        
        saveData(formData())
        output$page<-renderUI({
-      ui4()})
+      ui3()})
       })
       
       
       output$responses <- DT::renderDataTable({
-        input$button_in_stories
+        input$button_in_genres
         loadData()
       })     
       
       
-     # output$info<- renderDataTable(isolate(c(input$userName, input$genres)))
+     
       
       print(ui)
       
