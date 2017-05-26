@@ -7,25 +7,31 @@ Logged = FALSE;
 ui1 <- function(){
   tagList(
     div(id = "login",
-      wellPanel(  titlePanel("Step 1: authorization")),
+        wellPanel(  titlePanel("Step 1: authorization")),
         wellPanel(textInput("userName", "Username"),
                   passwordInput("passwd", "Password"),
                   br(),actionButton("Login", "Log in"))),
     tags$style(type="text/css", "#login {font-size:10px;   text-align: left;position:absolute;top: 40%;left: 50%;margin-top: -100px;margin-left: -150px;}")
   )
- 
-  }
+  
+}
 
 ui2 <- function(){ 
   tagList(
     div(id="genre",
-    wellPanel(titlePanel("Step 2 :Genres")),
- sidebarLayout(sidebarPanel(checkboxGroupInput("genres", "Genres to choose:", c("Romance" = "7",
-                                                                               "Drama" = "6",
-                                                                               "Fantasy" = "12",
-                                                                                "Action"="4",
-                                                                                "Comedy"="1"   ))), 
-               actionButton(inputId = "button_in_genres",label = "Go", icon = NULL)))
+        wellPanel(titlePanel("Step 2 :Genres")),
+        sidebarLayout(sidebarPanel(checkboxGroupInput("genres", "Genres to choose:", c("Drama" = "6",
+                                                                                       "Romance/Dating" = "7",
+                                                                                       "Comedy" = "1",
+                                                                                       "Family"="10",
+                                                                                       "Action"="4",
+                                                                                       "Celebrities"="37",
+                                                                                       "History"="45",
+                                                                                       "Thriller"="26",
+                                                                                       "Music"="32",
+                                                                                       "Fantasy"="12"
+        ))), 
+        actionButton(inputId = "button_in_genres",label = "Go", icon = NULL)))
   )
 }
 
@@ -33,52 +39,56 @@ ui2 <- function(){
 
 ui3<-function(){fluidPage(
   
-      titlePanel("Step 3 : Choice making"),
-     
-      
- 
- 
+  titlePanel("Step 3 : Choice making"),
+  
+  
+  
+  
   wellPanel("",
-                
-                selectInput(inputId = "in0", label = 'Choose doramas', 
-                            choices = colnames(titles), 
-                            multiple = TRUE, selectize = TRUE),
+            
+            selectInput(inputId = "in0", label = 'Choose doramas', 
+                        choices = colnames(titles), 
+                        multiple = TRUE, selectize = TRUE),
             uiOutput("variables"),
-  wellPanel("", actionButton(inputId = "button_in_choice",label = "Go", icon = NULL)),
-  
-  
-  wellPanel("Personal info",textOutput("dynamic"))
-           
-                
+            wellPanel("", actionButton(inputId = "button_in_choice",label = "Go", icon = NULL)),
+            
+            
+            wellPanel("Personal info",textOutput("dynamic"))
+            
+            
   ))}
- 
-                            
+
+
 
 ui4<- function(){fluidPage(
-      titlePanel("Step 4 :Stories"),
-      fluidRow(
-       column(6, 
-                              sliderInput("History", "History", min=0, max=10, value=0),
-                              sliderInput("Cinderella", "Cinderella", min=0, max=10, value=0),           
-                              sliderInput("Investigation", "Investigation", min=0, max=10, value=0),
-                              sliderInput("School", "School", min=0, max=10, value=0),
-                               sliderInput("Gender", "Gender", min=0, max=10, value=0)),
-        
-       
-       fluidRow(
-       column(6,
-                              sliderInput("Super", "Supernatural", min=0, max=10, value=0),
-                              sliderInput("Pro", "Professional", min=0, max=10, value=0),
-                              sliderInput("Revenge", "Revenge", min=0, max=10, value=0),
-                              sliderInput("Friendship", "Friendship", min=0, max=10, value=0),
-                              sliderInput("Secrets", "Secrets of the past", min=0, max=10, value=0)))),
-           fluidRow(   
-             column(12,
-                              actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
-                              
-                              
-       
-                    ) }
+  titlePanel("Step 4 :Stories"),
+  fluidRow(
+    column(2, 
+           sliderInput("History", "History", min=0, max=10, value=0),
+           sliderInput("Cinderella", "Cinderella", min=0, max=10, value=0),           
+           sliderInput("Investigation", "Investigation", min=0, max=10, value=0),
+           sliderInput("School", "School", min=0, max=10, value=0),
+           sliderInput("Gender", "Gender", min=0, max=10, value=0)),
+    
+  column(2,
+             sliderInput("Super", "Supernatural", min=0, max=10, value=0),
+             sliderInput("Pro", "Professional", min=0, max=10, value=0),
+             sliderInput("Revenge", "Revenge", min=0, max=10, value=0),
+             sliderInput("Friendship", "Friendship", min=0, max=10, value=0),
+             sliderInput("Secrets", "Secrets of the past", min=0, max=10, value=0)),
+
+  column(8,
+           "table with dramas"
+  )),
+  
+  
+  fluidRow(   
+    column(12,
+           actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
+  
+  
+  
+) }
 
 
 ui = (htmlOutput("page"))
@@ -103,7 +113,7 @@ server = (function(input, output,session) {
   load('KR_shows.RData')
   
   
-
+  
   saveData <- function(data) {
     data <- as.data.frame(t(data))
     if (exists("responses")) {
@@ -148,123 +158,123 @@ server = (function(input, output,session) {
     }
     if (USER$Logged == TRUE) 
     {
-    
+      
       output$page <- renderUI({ ui2()
         
         
-        })
+      })
       
       formData <- reactive({
         data <- sapply(fields, function(x) input[[x]])
         data
-        })
-      
-       observeEvent(input$button_in_genres,
-      {
-        
-        
-       user_genres <-as.data.frame(matrix(nrow=1, ncol=5))  
-       
-       user_genres<- t(input$genres)
-      # user_genres[is.na(user_genres)] <- 0 
-       
-      
-       output$user_genres<-DT::renderDataTable(user_genres)
-       
-       
-       
-      dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
-      
-       
-      first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
-      
-      
-      
-      first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
-      
-      titles<<-as.data.frame(t(first_page_dramas2))
-      colnames(titles) <<- as.character(unlist(titles[2,]))
-      
-      
-      
-      
-      
-      #output$first_page_dramas2<-DT::renderDataTable(first_page_dramas2)
-      
-       
-      for (i in first_page_dramas2) {y<-split( first_page_dramas2, f=first_page_dramas2$dorama_title)
-      }
-      
-      
-      for (i in seq(y))
-      {  assign(paste("df", i, sep = ""), y[[i]])}
-      
-      
-      
-      user_data<<-matrix(data=NA, ncol = ncol(matrix_rates))
-      colnames(user_data)<<-colnames(matrix_rates)
-      #user_data<<-t(user_data)
-      
-      
-      output$variables <- renderUI({
-        numVar <- length(as.integer(input$in0))
-      
-      lapply(input$in0, function(x) {
-        list(radioButtons(paste0("dynamic",x), x, 
-                          choices = c("Not watch" = "0",
-                                      "Terrible" = "1", 
-                                      "Awful" = "2",
-                                      "Normal" = "3", 
-                                      "Excellent" = "4",
-                                      "Perfect" = "5"),
-                                        selected = "one"))
-       
-       
-         })
-      
-      
       })
       
-      
-      
-    #%   for (i in ncol(titles)){
-      #%  user_data[rownames(user_data)==i]<-output$paste("dynamic",i, sep = "")
-    #%  }
-      
-      
-       #user vector (doramas)
-       
-       
-       
-     
-       
-      # user_data<-t(user_data)
-       
-       user_data<-as(user_data,"realRatingMatrix")
-       
-       
-       
-       
-       
-       
-        output$page<-renderUI({
-                     
-                     ui3()})}
-        )
-      
-      
-       
-    # output$userinfo<- renderDataTable({list(input$userName, input$genres)})
-      
-       
-       
       observeEvent(input$button_in_genres,
-     {
-       
-       saveData(formData())
-       output$page<-renderUI({
-      ui3()})
-      })
+                   {
+                     
+                     
+                     user_genres <-as.data.frame(matrix(nrow=1, ncol=5))  
+                     
+                     user_genres<- t(input$genres)
+                     # user_genres[is.na(user_genres)] <- 0 
+                     
+                     
+                     output$user_genres<-DT::renderDataTable(user_genres)
+                     
+                     
+                     
+                     dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+                     
+                     
+                     first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+                     
+                     
+                     
+                     first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+                     
+                     titles<<-as.data.frame(t(first_page_dramas2))
+                     colnames(titles) <<- as.character(unlist(titles[2,]))
+                     
+                     
+                     
+                     
+                     
+                     #output$first_page_dramas2<-DT::renderDataTable(first_page_dramas2)
+                     
+                     
+                     for (i in first_page_dramas2) {y<-split( first_page_dramas2, f=first_page_dramas2$dorama_title)
+                     }
+                     
+                     
+                     for (i in seq(y))
+                     {  assign(paste("df", i, sep = ""), y[[i]])}
+                     
+                     
+                     
+                     user_data<<-matrix(data=NA, ncol = ncol(matrix_rates))
+                     colnames(user_data)<<-colnames(matrix_rates)
+                     #user_data<<-t(user_data)
+                     
+                     
+                     output$variables <- renderUI({
+                       numVar <- length(as.integer(input$in0))
+                       
+                       lapply(input$in0, function(x) {
+                         list(radioButtons(paste0("dynamic",x), x, 
+                                           choices = c("Not watch" = "0",
+                                                       "Terrible" = "1", 
+                                                       "Awful" = "2",
+                                                       "Normal" = "3", 
+                                                       "Excellent" = "4",
+                                                       "Perfect" = "5"),
+                                           selected = "one"))
+                         
+                         
+                       })
+                       
+                       
+                     })
+                     
+                     
+                     
+                     #%   for (i in ncol(titles)){
+                     #%  user_data[rownames(user_data)==i]<-output$paste("dynamic",i, sep = "")
+                     #%  }
+                     
+                     
+                     #user vector (doramas)
+                     
+                     
+                     
+                     
+                     
+                     # user_data<-t(user_data)
+                     
+                     user_data<-as(user_data,"realRatingMatrix")
+                     
+                     
+                     
+                     
+                     
+                     
+                     output$page<-renderUI({
+                       
+                       ui3()})}
+      )
+      
+      
+      
+      # output$userinfo<- renderDataTable({list(input$userName, input$genres)})
+      
+      
+      
+      observeEvent(input$button_in_genres,
+                   {
+                     
+                     saveData(formData())
+                     output$page<-renderUI({
+                       ui3()})
+                   })
       
       
       output$responses <- DT::renderDataTable({
@@ -276,14 +286,14 @@ server = (function(input, output,session) {
       observeEvent(input$button_in_choice,
                    {output$page<-renderUI({ui4()})
                    })
-                    
+      
       print(ui)
       
-
+      
     }
   })
-
-
-  })
+  
+  
+})
 
 runApp(list(ui = ui, server = server))
