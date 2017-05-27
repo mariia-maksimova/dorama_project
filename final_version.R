@@ -83,3 +83,11 @@ dramas_wants<-filter(dramas_wants, School>=user_wants$Revenge-2, School<=user_wa
 dramas_wants<-filter(dramas_wants, School>=user_wants$Friendship-2, School<=user_wants$Friendship+2)
 dramas_wants<-filter(dramas_wants, School>=user_wants$Secrets-2, School<=user_wants$Secrets+2)
 
+
+
+#additions
+
+for (i in 1:1248){
+  KR_rating_full$dorama_myshows[i]=paste0("https://myshows.me/view/",KR_shows$dorama_id[i],"/")
+}
+save(KR_rating_full, file="KR_rating_full.RData")

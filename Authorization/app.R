@@ -47,11 +47,10 @@ ui3<-function(){fluidPage(
   wellPanel("",
             
             selectInput(inputId = "in0", label = 'Choose doramas', 
-                        choices = colnames(titles), 
+                        choices = titles2, 
                         multiple = TRUE, selectize = TRUE),
             uiOutput("variables"),
             wellPanel("", actionButton(inputId = "button_in_choice",label = "Go", icon = NULL)),
-            
             
             wellPanel("Personal info",textOutput("dynamic"))
             
@@ -78,13 +77,9 @@ ui4<- function(){fluidPage(
              sliderInput("Secrets", "Secrets of the past", min=0, max=10, value=0)),
 
   column(8,
-           "table with dramas"
-  )),
+         DT::dataTableOutput("table")
+  ))
   
-  
-  fluidRow(   
-    column(12,
-           actionButton(inputId = "button_in_stories",label = "Go", icon = NULL)))
   
   
   
@@ -192,8 +187,11 @@ server = (function(input, output,session) {
                      
                      first_page_dramas2 <-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
                      
-                     titles<<-as.data.frame(t(first_page_dramas2))
-                     colnames(titles) <<- as.character(unlist(titles[2,]))
+                     #titles<<-as.data.frame(t(first_page_dramas2))
+                     #colnames(titles) <<- as.character(unlist(titles[2,]))
+                     
+                     titles2<<-as.list(first_page_dramas2$dorama_id)
+                     names(titles2)<<-as.character(first_page_dramas2$dorama_title)
                      
                      
                      
@@ -202,12 +200,12 @@ server = (function(input, output,session) {
                      #output$first_page_dramas2<-DT::renderDataTable(first_page_dramas2)
                      
                      
-                     for (i in first_page_dramas2) {y<-split( first_page_dramas2, f=first_page_dramas2$dorama_title)
-                     }
+                 #    for (i in first_page_dramas2) {y<-split( first_page_dramas2, f=first_page_dramas2$dorama_title)
+                #     }
+                 #    
                      
-                     
-                     for (i in seq(y))
-                     {  assign(paste("df", i, sep = ""), y[[i]])}
+                  #   for (i in seq(y))
+                   #  {  assign(paste("df", i, sep = ""), y[[i]])}
                      
                      
                      
@@ -220,38 +218,22 @@ server = (function(input, output,session) {
                        numVar <- length(as.integer(input$in0))
                        
                        lapply(input$in0, function(x) {
-                         list(radioButtons(paste0("dynamic",x), x, 
-                                           choices = c("Not watch" = "0",
+                         list(radioButtons(paste0("dynamic",x), first_page_dramas2$dorama_title[first_page_dramas2$dorama_id==x], 
+                                           choices = c("Not watch" = "NA",
                                                        "Terrible" = "1", 
                                                        "Awful" = "2",
                                                        "Normal" = "3", 
                                                        "Excellent" = "4",
                                                        "Perfect" = "5"),
-                                           selected = "one"))
+                                           selected = "one")
+                                   )
+                         
                          
                          
                        })
                        
                        
                      })
-                     
-                     
-                     
-                     #%   for (i in ncol(titles)){
-                     #%  user_data[rownames(user_data)==i]<-output$paste("dynamic",i, sep = "")
-                     #%  }
-                     
-                     
-                     #user vector (doramas)
-                     
-                     
-                     
-                     
-                     
-                     # user_data<-t(user_data)
-                     
-                     user_data<-as(user_data,"realRatingMatrix")
-                     
                      
                      
                      
@@ -284,7 +266,102 @@ server = (function(input, output,session) {
       
       
       observeEvent(input$button_in_choice,
-                   {output$page<-renderUI({ui4()})
+                  {
+                
+                 
+                    
+                 for (var in titles2){
+                  if(is.null(input[[paste0("dynamic", var)]])==FALSE){
+                  user_data[colnames(user_data)==as.character(var)] <<- as.numeric(input[[paste0("dynamic", var)]])
+                  }
+                 }
+                    
+                 
+                 
+                 
+        
+                 # for (x in titles2){
+                  #  if (input$paste0("dynamic",x) != ""){
+                   # user_data[colnames(user_data)==as.character(x)]=input$paste0("dynamic",x)}
+                     
+                  # }
+                     
+                   
+                   #
+                   #%   for (i in ncol(titles)){
+                   #%  user_data[rownames(user_data)==i]<-output$paste("dynamic",i, sep = "")
+                   #%  }
+                   
+                   
+                   #user vector (doramas)
+                   
+                   
+                   # user_data<-t(user_data)
+                  #user_data<- sapply(user_data, as.numeric)
+                  user_data<-as(user_data,"realRatingMatrix")
+                  
+                  recc_predicted <- predict(object = recc_model, newdata = user_data, n = 700)
+                  recc_user_1 <- recc_predicted@items[[1]]
+                  recc_user_ratings<-recc_predicted@ratings[[1]]
+                  
+                  dorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)
+                  dorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))
+                  
+                  KR_rating_full$id=as.numeric(rownames(KR_rating_full))
+                  
+                  dramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id') 
+                  dramas<-dramas[order(dramas$rating, decreasing = TRUE),]
+                  
+                # dramas2<-select(dramas, dorama_title, dorama_myshows)
+                  
+                  filter_dramas <- reactive({
+                    
+                    school <- as.numeric(input$School)
+                    history <- as.numeric(input$History)
+                    gender <- as.numeric(input$Gender)
+                    super <- as.numeric(input$Super)
+                    pro <- as.numeric(input$Pro)
+                    investigation <- as.numeric(input$Investigation)
+                    cinderella <- as.numeric(input$Cinderella)
+                    revenge <- as.numeric(input$Revenge)
+                    friendship <- as.numeric(input$Friendship)
+                    secrets <- as.numeric(input$Secrets)
+                    
+                    dramas2 <<- dramas %>%
+                      filter(
+                        School <= school+4,
+                        School >= school-4,
+                        History <= history+4, 
+                        History >= history-4,
+                        Gender <= gender+4,
+                        Gender >= gender-4,
+                        Super <= super+4,
+                        Super >= super-4,
+                        Pro <= pro+4,
+                        Pro >= pro-4,
+                        Investigation <= investigation+4,
+                        Investigation >= investigation-4,
+                        Cinderella <= cinderella+4,
+                        Cinderella >= cinderella-4,
+                        Revenge <= revenge+4,
+                        Revenge >= revenge-4,
+                        Friendship <= friendship+4,
+                        Friendship >= friendship-4,
+                        Secrets <= secrets+4,
+                        Secrets >= secrets-4
+                      ) 
+
+                    
+                  
+                     dramas2<<-select(dramas2, dorama_title, dorama_myshows)
+                    
+                    
+                  })
+                  
+                  output$table<-DT::renderDataTable({ filter_dramas() })
+                  
+                  output$page<-renderUI({ui4()})
+                   
                    })
       
       print(ui)
