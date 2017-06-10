@@ -1,0 +1,11 @@
+name: dorama_project
+title: dorama_project
+account: marinemaks
+server: shinyapps.io
+appId: 184102
+bundleId: 842561
+url: https://marinemaks.shinyapps.io/dorama_project/
+when: 1495849099.09523
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: final_version.R|Authorization/final_version.R|Authorization/example_from_github/server.R|Authorization/example_from_github/ui.R|Authorization/rsconnect/shinyapps.io/marinemaks/doramas.dcf|old_data/5_dramas_matrix.csv|old_data/KR_genres.csv|old_data/KR_matrix-3.csv|old_data/KR_rates.csv|old_data/KR_shows.csv|old_data/KR_shows_csv.csv|old_data/matrix_rates_crop-1.csv|old_data/recc.csv|old_data/recc_matrix.RData|old_scripts/current.RData|old_scripts/data.R|old_scripts/filter.R|old_scripts/genres.R|old_scripts/model1.Rmd|old_scripts/recommend_model_clear.R

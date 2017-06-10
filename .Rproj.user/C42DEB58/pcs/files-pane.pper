@@ -1,0 +1,9 @@
+{
+    "path" : "~/dorama_project/application",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

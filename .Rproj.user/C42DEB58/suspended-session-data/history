@@ -1,0 +1,512 @@
+super <- as.numeric(user_wants$Super)
+user_wants=as.data.frame(matrix(nrow=1, ncol=10))
+colnames(user_wants)<-c('School',	'History',	'Gender',	'Super',	'Pro',	'Investigation',	'Cinderella',	'Revenge','Friendship','Secrets')
+user_wants$School=4
+user_wants$History=3
+user_wants$Gender=5
+user_wants$Super=2
+user_wants$Pro=5
+user_wants$Investigation=4
+user_wants$Cinderella=4
+user_wants$Revenge=6
+user_wants$Friendship=5
+user_wants$Secrets=4
+school <- as.numeric(user_wants$School)
+history <- as.numeric(user_wants$History)
+gender <- as.numeric(user_wants$Gender)
+super <- as.numeric(user_wants$Super)
+pro <- as.numeric(user_wants$Pro)
+investigation <- as.numeric(user_wants$Investigation)
+cinderella <- as.numeric(user_wants$Cinderella)
+revenge <- as.numeric(user_wants$Revenge)
+friendship <- as.numeric(user_wants$Friendship)
+secrets <- as.numeric(user_wants$Secrets)
+d <- dramas %>%
+filter(
+School <= school+2,
+School >= school-2,
+History <= history+2,
+History >= history-2,
+Gender <= gender+2,
+Gender >= gender-2,
+Super <= super+2,
+Super >= super-2,
+Pro <= pro+2,
+Pro >= pro-2,
+Investigation <= investigation+2,
+Investigation >= investigation-2,
+Cinderella <= cinderella+2,
+Cinderella >= cinderella-2,
+Revenge <= revenge+2,
+Revenge >= revenge-2,
+Friendship <= friendship+2,
+Friendship >= friendship-2,
+Secrets <= secrets+2,
+Secrets >= secrets-2
+)
+d <- dramas %>%
+filter(
+School <= school+3,
+School >= school-3,
+History <= history+3,
+History >= history-3,
+Gender <= gender+3,
+Gender >= gender-3,
+Super <= super+3,
+Super >= super-3,
+Pro <= pro+3,
+Pro >= pro-3,
+Investigation <= investigation+3,
+Investigation >= investigation-3,
+Cinderella <= cinderella+3,
+Cinderella >= cinderella-3,
+Revenge <= revenge+3,
+Revenge >= revenge-3,
+Friendship <= friendship+3,
+Friendship >= friendship-3,
+Secrets <= secrets+3,
+Secrets >= secrets-3
+)
+source('Authorization/app.R')
+load('matrix_rates.RData')
+load('recc_model.RData')
+load('dramas_matrix.RData')
+load('KR_genres.RData')
+load('KR_rates.RData')
+load('KR_rating_full.RData')
+load('KR_shows.RData')
+user_genres=as.data.frame(matrix(nrow=1, ncol=5))
+user_genres[1]=6
+user_genres[2]=1
+user_genres[3]=12
+user_genres[4]=35
+user_genres[5]=36
+dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+first_page_dramas2<-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
+colnames(user_data)<-colnames(matrix_rates)
+user_data<-t(user_data)
+for (i in first_page_dramas2$dorama_id){
+user_data[rownames(user_data)==i]=5
+}
+user_data<-t(user_data)
+user_data<-as(user_data,"realRatingMatrix")
+recc_predicted <- predict(object = recc_model, newdata = user_data, n = 300)
+recc_user_1 <- recc_predicted@items[[1]]
+recc_user_ratings<-recc_predicted@ratings[[1]]
+dorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)
+dorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))
+KR_rating_full$id=as.numeric(rownames(KR_rating_full))
+dramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id')
+user_wants=as.data.frame(matrix(nrow=1, ncol=10))
+colnames(user_wants)<-c('School',	'History',	'Gender',	'Super',	'Pro',	'Investigation',	'Cinderella',	'Revenge','Friendship','Secrets')
+user_wants$School=4
+user_wants$History=3
+user_wants$Gender=5
+user_wants$Super=2
+user_wants$Pro=5
+user_wants$Investigation=4
+user_wants$Cinderella=4
+user_wants$Revenge=6
+user_wants$Friendship=5
+user_wants$Secrets=4
+school <- as.numeric(user_wants$School)
+history <- as.numeric(user_wants$History)
+gender <- as.numeric(user_wants$Gender)
+super <- as.numeric(user_wants$Super)
+pro <- as.numeric(user_wants$Pro)
+investigation <- as.numeric(user_wants$Investigation)
+cinderella <- as.numeric(user_wants$Cinderella)
+revenge <- as.numeric(user_wants$Revenge)
+friendship <- as.numeric(user_wants$Friendship)
+secrets <- as.numeric(user_wants$Secrets)
+d <- dramas %>%
+filter(
+School <= school+3,
+School >= school-3,
+History <= history+3,
+History >= history-3,
+Gender <= gender+3,
+Gender >= gender-3,
+Super <= super+3,
+Super >= super-3,
+Pro <= pro+3,
+Pro >= pro-3,
+Investigation <= investigation+3,
+Investigation >= investigation-3,
+Cinderella <= cinderella+3,
+Cinderella >= cinderella-3,
+Revenge <= revenge+3,
+Revenge >= revenge-3,
+Friendship <= friendship+3,
+Friendship >= friendship-3,
+Secrets <= secrets+3,
+Secrets >= secrets-3
+)
+d<<-as.data.frame(d)
+d2<<-select(d, dorama_title, dorama_myshows)
+View(d2)
+source('Authorization/app.R')
+d2
+source('Authorization/app.R')
+filter_dramas <- reactive({
+school <- as.numeric(user_wants$School)
+history <- as.numeric(user_wants$History)
+gender <- as.numeric(user_wants$Gender)
+super <- as.numeric(user_wants$Super)
+pro <- as.numeric(user_wants$Pro)
+investigation <- as.numeric(user_wants$Investigation)
+cinderella <- as.numeric(user_wants$Cinderella)
+revenge <- as.numeric(user_wants$Revenge)
+friendship <- as.numeric(user_wants$Friendship)
+secrets <- as.numeric(user_wants$Secrets)
+d <- dramas %>%
+filter(
+School <= school+3,
+School >= school-3,
+History <= history+3,
+History >= history-3,
+Gender <= gender+3,
+Gender >= gender-3,
+Super <= super+3,
+Super >= super-3,
+Pro <= pro+3,
+Pro >= pro-3,
+Investigation <= investigation+3,
+Investigation >= investigation-3,
+Cinderella <= cinderella+3,
+Cinderella >= cinderella-3,
+Revenge <= revenge+3,
+Revenge >= revenge-3,
+Friendship <= friendship+3,
+Friendship >= friendship-3,
+Secrets <= secrets+3,
+Secrets >= secrets-3
+)
+d<<-as.data.frame(d)
+d2<<-select(d, dorama_title, dorama_myshows)
+d2
+})
+filter_dramas
+filter_dramas()
+load('matrix_rates.RData')
+load('recc_model.RData')
+load('dramas_matrix.RData')
+load('KR_genres.RData')
+load('KR_rates.RData')
+load('KR_rating_full.RData')
+load('KR_shows.RData')
+user_genres=as.data.frame(matrix(nrow=1, ncol=5))
+user_genres[1]=6
+user_genres[2]=1
+user_genres[3]=12
+user_genres[4]=35
+user_genres[5]=36
+dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+first_page_dramas2<-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
+colnames(user_data)<-colnames(matrix_rates)
+user_data<-t(user_data)
+for (i in first_page_dramas2$dorama_id){
+user_data[rownames(user_data)==i]=5
+}
+user_data<-t(user_data)
+user_data<-as(user_data,"realRatingMatrix")
+recc_predicted <- predict(object = recc_model, newdata = user_data, n = 300)
+recc_user_1 <- recc_predicted@items[[1]]
+recc_user_ratings<-recc_predicted@ratings[[1]]
+dorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)
+dorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))
+KR_rating_full$id=as.numeric(rownames(KR_rating_full))
+dramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id')
+user_wants=as.data.frame(matrix(nrow=1, ncol=10))
+colnames(user_wants)<-c('School',	'History',	'Gender',	'Super',	'Pro',	'Investigation',	'Cinderella',	'Revenge','Friendship','Secrets')
+user_wants$School=4
+user_wants$History=3
+user_wants$Gender=5
+user_wants$Super=2
+user_wants$Pro=5
+user_wants$Investigation=4
+user_wants$Cinderella=4
+user_wants$Revenge=6
+user_wants$Friendship=5
+user_wants$Secrets=4
+school <- as.numeric(user_wants$School)
+history <- as.numeric(user_wants$History)
+gender <- as.numeric(user_wants$Gender)
+super <- as.numeric(user_wants$Super)
+filter_dramas <- reactive({
+school <- as.numeric(user_wants$School)
+history <- as.numeric(user_wants$History)
+gender <- as.numeric(user_wants$Gender)
+super <- as.numeric(user_wants$Super)
+pro <- as.numeric(user_wants$Pro)
+investigation <- as.numeric(user_wants$Investigation)
+cinderella <- as.numeric(user_wants$Cinderella)
+revenge <- as.numeric(user_wants$Revenge)
+friendship <- as.numeric(user_wants$Friendship)
+secrets <- as.numeric(user_wants$Secrets)
+d <- dramas %>%
+filter(
+School <= school+3,
+School >= school-3,
+History <= history+3,
+History >= history-3,
+Gender <= gender+3,
+Gender >= gender-3,
+Super <= super+3,
+Super >= super-3,
+Pro <= pro+3,
+Pro >= pro-3,
+Investigation <= investigation+3,
+Investigation >= investigation-3,
+Cinderella <= cinderella+3,
+Cinderella >= cinderella-3,
+Revenge <= revenge+3,
+Revenge >= revenge-3,
+Friendship <= friendship+3,
+Friendship >= friendship-3,
+Secrets <= secrets+3,
+Secrets >= secrets-3
+)
+d<<-as.data.frame(d)
+d2<<-select(d, dorama_title, dorama_myshows)
+d2
+})
+filter_dramas()
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+filter_dramas
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+if (TRUE & TRUE){TRUE}
+if (TRUE!=TRUE & TRUE){TRUE}
+if (TRUE & TRUE){TRUE}
+if (TRUE!=FALSE & TRUE){TRUE}
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+is.null(dramas2)
+length(dramas2)
+length(dramas2$dorama_title)
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+source('Authorization/app.R')
+runApp()
+shiny::runApp()
+shiny::runApp(list(ui = ui, server = server))
+shiny::runApp(list(ui = ui, server = server))
+runApp(list(ui = ui, server = server))
+setwd("~/dorama_project")
+getwd()
+shiny::runApp()
+shiny::runApp()
+shinyApp(ui = ui, server = server)
+setwd("~/dorama_project/application")
+shinyApp(ui = ui, server = server)
+shiny::runApp()
+source('application/app.R')
+shiny::runApp()
+runApp('application')
+runApp('application')
+load('matrix_rates.RData')
+library(recommenderlab)
+library(dplyr)
+library(readr)
+load('matrix_rates.RData')
+load('recc_model.RData')
+load('dramas_matrix.RData')
+load('KR_genres.RData')
+load('KR_rates.RData')
+load('KR_rating_full.RData')
+load('KR_shows.RData')
+library(recommenderlab)
+library(dplyr)
+library(readr)
+load('matrix_rates.RData')
+load('recc_model.RData')
+load('dramas_matrix.RData')
+load('KR_genres.RData')
+library(recommenderlab)
+library(dplyr)
+library(readr)
+load('matrix_rates.RData')
+load("~/dorama_project/application/dramas_matrix.RData")
+load("~/dorama_project/application/KR_genres.RData")
+load("~/dorama_project/application/KR_rates.RData")
+load("~/dorama_project/application/KR_rating_full.RData")
+load("~/dorama_project/application/KR_shows.RData")
+load("~/dorama_project/application/matrix_rates.RData")
+load("~/dorama_project/application/recc_model.RData")
+user_genres=as.data.frame(matrix(nrow=1, ncol=5))
+user_genres[1]=6
+user_genres[2]=1
+user_genres[3]=12
+user_genres[4]=35
+user_genres[5]=36
+dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+first_page_dramas2<-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
+user_data<-t(user_data)
+for (i in first_page_dramas2$dorama_id){
+user_data[rownames(user_data)==i]=5
+}
+user_data<-t(user_data)
+user_data<-as(user_data,"realRatingMatrix")
+recc_predicted <- predict(object = recc_model, newdata = user_data, n = 700)
+recc_user_1 <- recc_predicted@items[[1]]
+recc_user_ratings<-recc_predicted@ratings[[1]]
+dorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)
+dorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))
+KR_rating_full$id=as.numeric(rownames(KR_rating_full))
+dramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id')
+recc_predicted <- predict(object = recc_model, newdata = user_data, n = 700)
+recc_user_1 <- recc_predicted@items[[1]]
+user_genres=as.data.frame(matrix(nrow=1, ncol=5))
+user_genres[1]=6
+user_genres[2]=1
+user_genres[3]=12
+user_genres[4]=35
+user_genres[5]=36
+dramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)
+first_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])
+first_page_dramas2<-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )
+user_data<-matrix(data=NA, ncol = ncol(matrix_rates))
+colnames(user_data)<-colnames(matrix_rates)
+user_data<-t(user_data)
+for (i in first_page_dramas2$dorama_id){
+user_data[rownames(user_data)==i]=5
+}
+View(user_data)
+user_data<-t(user_data)
+user_data<-as(user_data,"realRatingMatrix")
+recc_predicted <- predict(object = recc_model, newdata = user_data, n = 700)
+recc_user_1 <- recc_predicted@items[[1]]
+recc_user_ratings<-recc_predicted@ratings[[1]]
+dorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)
+dorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))
+KR_rating_full$id=as.numeric(rownames(KR_rating_full))
+dramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id')
+View(dramas)
+dramas<-dramas[order(dramas$rating, decreasing = TRUE),]
+dramas2 <<- dramas %>%
+filter(
+School <= school+4,
+School >= school-4,
+History <= history+4,
+History >= history-4,
+Gender <= gender+4,
+Gender >= gender-4,
+Super <= super+4,
+Super >= super-4,
+Pro <= pro+4,
+Pro >= pro-4,
+Investigation <= investigation+4,
+Investigation >= investigation-4,
+Cinderella <= cinderella+4,
+Cinderella >= cinderella-4,
+Revenge <= revenge+4,
+Revenge >= revenge-4,
+Friendship <= friendship+4,
+Friendship >= friendship-4,
+Secrets <= secrets+4,
+Secrets >= secrets-4
+)
+school=0
+history=0
+gender=0
+super=0
+pro=0
+investigation=0
+cinderella=0
+revenge=0
+friendship=0
+secrets=0
+dramas2 <<- dramas %>%
+filter(
+School <= school+4,
+School >= school-4,
+History <= history+4,
+History >= history-4,
+Gender <= gender+4,
+Gender >= gender-4,
+Super <= super+4,
+Super >= super-4,
+Pro <= pro+4,
+Pro >= pro-4,
+Investigation <= investigation+4,
+Investigation >= investigation-4,
+Cinderella <= cinderella+4,
+Cinderella >= cinderella-4,
+Revenge <= revenge+4,
+Revenge >= revenge-4,
+Friendship <= friendship+4,
+Friendship >= friendship-4,
+Secrets <= secrets+4,
+Secrets >= secrets-4
+)
+dramas2<<-select(dramas2, dorama_title, dorama_myshows)
+View(dramas2)
+dramas2 <<- dramas %>%
+filter(
+School <= school+4,
+School >= school-4,
+History <= history+4,
+History >= history-4,
+Gender <= gender+4,
+Gender >= gender-4,
+Super <= super+4,
+Super >= super-4,
+Pro <= pro+4,
+Pro >= pro-4,
+Investigation <= investigation+4,
+Investigation >= investigation-4,
+Cinderella <= cinderella+4,
+Cinderella >= cinderella-4,
+Revenge <= revenge+4,
+Revenge >= revenge-4,
+Friendship <= friendship+4,
+Friendship >= friendship-4,
+Secrets <= secrets+4,
+Secrets >= secrets-4
+)
+dramas2<<-select(dramas2, rating, dorama_title, dorama_myshows)
+dramas2 <<- dramas %>%
+filter(
+School <= school+4,
+School >= school-4,
+History <= history+4,
+History >= history-4,
+Gender <= gender+4,
+Gender >= gender-4,
+Super <= super+4,
+Super >= super-4,
+Pro <= pro+4,
+Pro >= pro-4,
+Investigation <= investigation+4,
+Investigation >= investigation-4,
+Cinderella <= cinderella+4,
+Cinderella >= cinderella-4,
+Revenge <= revenge+4,
+Revenge >= revenge-4,
+Friendship <= friendship+4,
+Friendship >= friendship-4,
+Secrets <= secrets+4,
+Secrets >= secrets-4
+)
+dramas2<<-select(dramas2, dorama_title, dorama_myshows)
+runApp('application')

@@ -1,0 +1,11 @@
+name: doramas
+title: Doramas
+account: marinemaks
+server: shinyapps.io
+appId: 184101
+bundleId: 842530
+url: https://marinemaks.shinyapps.io/doramas/
+when: 1495847245.43025
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: final_version.R|example_from_github/server.R|example_from_github/ui.R

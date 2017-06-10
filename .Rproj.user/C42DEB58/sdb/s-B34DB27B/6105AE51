@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#libraries\nlibrary(recommenderlab)\nlibrary(dplyr)\nlibrary(readr)\n\n#data loads\nload('matrix_rates.RData')\nload('recc_model.RData')\nload('dramas_matrix.RData')\nload('KR_genres.RData')\nload('KR_rates.RData')\nload('KR_rating_full.RData')\nload('KR_shows.RData')\n\n#genres of the user\n\nuser_genres=as.data.frame(matrix(nrow=1, ncol=5))\nuser_genres[1]=6\nuser_genres[2]=1\nuser_genres[3]=12\nuser_genres[4]=35\nuser_genres[5]=36\n\ndramas_matrix_work<-filter(dramas_matrix, is.element(genre_id,user_genres)==TRUE)\nfirst_page_dramas<-data.frame(dorama_id=stack(dramas_matrix_work[,2:6])[,1])\nfirst_page_dramas2<-filter(KR_shows, is.element(dorama_id,first_page_dramas$dorama_id)==TRUE )\n\n#user vector (doramas)\n\nuser_data<-matrix(data=NA, ncol = ncol(matrix_rates))\ncolnames(user_data)<-colnames(matrix_rates)\nuser_data<-t(user_data)\n\nfor (i in first_page_dramas2$dorama_id){\n  user_data[rownames(user_data)==i]=5\n}\nuser_data<-t(user_data)\n\nuser_data<-as(user_data,\"realRatingMatrix\")\n\n#recommend\n\nrecc_predicted <- predict(object = recc_model, newdata = user_data, n = 700)\nrecc_user_1 <- recc_predicted@items[[1]]\nrecc_user_ratings<-recc_predicted@ratings[[1]]\n\ndorama_id<- sapply( recc_predicted@itemLabels[recc_user_1], as.integer)\ndorama_ids<-cbind(dorama_id, data.frame(rating=recc_user_ratings))\n\nKR_rating_full$id=as.numeric(rownames(KR_rating_full))\n\ndramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id')\n\n\ndramas<-dramas[order(dramas$rating, decreasing = TRUE),]\n\n#user wants (interactive part)\n\nuser_wants=as.data.frame(matrix(nrow=1, ncol=10))\ncolnames(user_wants)<-c('School',\t'History',\t'Gender',\t'Super',\t'Pro',\t'Investigation',\t'Cinderella',\t'Revenge','Friendship','Secrets')\n\nuser_wants$School=4\nuser_wants$History=3\nuser_wants$Gender=5\nuser_wants$Super=2\nuser_wants$Pro=5\nuser_wants$Investigation=4\nuser_wants$Cinderella=4\nuser_wants$Revenge=6\nuser_wants$Friendship=5\nuser_wants$Secrets=4\n\n#filter\n\ndramas_wants<-filter(dramas, School>=user_wants$School-2, School<=user_wants$School+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$History-2, School<=user_wants$History+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Gender-2, School<=user_wants$Gender+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Super-2, School<=user_wants$Super+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Pro-2, School<=user_wants$Pro+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Investigation-2, School<=user_wants$Investigation+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Cinderella-2, School<=user_wants$Cinderella+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Revenge-2, School<=user_wants$Revenge+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Friendship-2, School<=user_wants$Friendship+2)\ndramas_wants<-filter(dramas_wants, School>=user_wants$Secrets-2, School<=user_wants$Secrets+2)\n\n\n\n#additions\n\nfor (i in 1:1248){\n  KR_rating_full$dorama_myshows[i]=paste0(\"https://myshows.me/view/\",KR_shows$dorama_id[i],\"/\")\n}\nsave(KR_rating_full, file=\"KR_rating_full.RData\")\n",
+    "created" : 1497121988677.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2944200834",
+    "id" : "6105AE51",
+    "lastKnownWriteTime" : 1495877043,
+    "last_content_update" : 1495877043,
+    "path" : "~/dorama_project/application/final_version.R",
+    "project_path" : "application/final_version.R",
+    "properties" : {
+    },
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
