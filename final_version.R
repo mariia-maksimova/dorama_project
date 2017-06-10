@@ -40,7 +40,7 @@ user_data<-as(user_data,"realRatingMatrix")
 
 #recommend
 
-recc_predicted <- predict(object = recc_model, newdata = user_data, n = 300)
+recc_predicted <- predict(object = recc_model, newdata = user_data, n = 700)
 recc_user_1 <- recc_predicted@items[[1]]
 recc_user_ratings<-recc_predicted@ratings[[1]]
 
@@ -52,7 +52,7 @@ KR_rating_full$id=as.numeric(rownames(KR_rating_full))
 dramas=inner_join(dorama_ids, KR_rating_full, by='dorama_id')
 
 
-
+dramas<-dramas[order(dramas$rating, decreasing = TRUE),]
 
 #user wants (interactive part)
 
