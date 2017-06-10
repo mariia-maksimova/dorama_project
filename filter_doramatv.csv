@@ -1,0 +1,777 @@
+;dorama_id;dorama_title;overall_rating;watching;seasons;year;genres;Type;doramatv
+1;32448;The Heirs;4,23;5268;1;2013;{6,7,1};1;http://doramatv.ru/the_heirs
+2;7858;You're Beautiful;4,28;5450;1;2009;{6,1,7};1;http://doramatv.ru/a_n_jell__you_re_beautiful
+3;16088;Boys over flowers;4,2;5403;2;2009;{1,2,7,6,31,10};1;http://doramatv.ru/boys_over_flowers__korea
+4;30055;Flower Boy Next Door;4,07;3649;1;2013;{7,2,1};1;http://doramatv.ru/flower_boy_next_door
+5;27407;Heartstrings (You've Fallen for Me);4,09;3173;1;2011;{7,11,2,76,32};1;http://doramatv.ru/heartstrings
+6;18508;Secret Garden;4,25;3087;1;2010;{6,12,7,1};1;http://doramatv.ru/secret_garden
+7;11579;Mischievous Kiss;3,94;3285;1;2010;{7,6,1};1;http://doramatv.ru/mischievous_kiss
+8;25910;To the Beautiful You;3,99;2921;1;2012;{1,7,6};1;http://doramatv.ru/to_the_beautiful_you
+9;25670;City Hunter (SK);4,31;3016;1;2011;{7,6,4};1;http://doramatv.ru/city_hunter
+10;30668;Personal Taste;4,03;2729;1;2010;{6,1,7};1;http://doramatv.ru/personal_taste
+11;34626;Man from the Stars;4,37;2689;1;2013;{12,25,7};1;http://doramatv.ru/man_from_the_stars
+12;16150;Dream High;4,11;2797;2;2011;{1,7,6,32};1;http://doramatv.ru/dream_high
+13;39456;Pinocchio;4,35;2579;1;2014;{7,10,12};1;http://doramatv.ru/pinocchio
+14;32637;I Hear Your Voice;4,48;2560;1;2013;{7,26,25,12,6};1;http://doramatv.ru/i_hear_your_voice
+15;32447;The Master's Sun;4,54;2491;1;2013;{30,12,26,6,7,1};1;http://doramatv.ru/the_master_s_sun
+16;11493;Mary Stayed Out All Night;3,92;2638;1;2010;{6,1,7};1;http://doramatv.ru/mary_stayed_out_all_night
+17;29687;Flower Boy Ramyun Shop;3,9;2140;1;2011;{1,7};1;http://doramatv.ru/flower_boy_ramen_shop
+18;25663;Shut Up Flower Boy Band;4,17;2224;1;2012;{32,7,6};1;http://doramatv.ru/shut_up_flower_boy_band
+19;41633;Kill Me, Heal Me;4,48;2214;1;2015;{35,7,1};1;http://doramatv.ru/kill_me__heal_me
+20;17306;Coffee Prince;4,01;2133;1;2007;{6,7,1};1;http://doramatv.ru/1st_shop_of_coffee_prince
+21;44459;She Was Pretty;4,4;1988;1;2015;{7,1,6};1;http://doramatv.ru/she_was_pretty
+22;39711;Healer;4,55;1936;1;2014;{4,7,26,1,6};1;http://doramatv.ru/healer
+23;38015;It's Okay, It's Love;4,47;1793;1;2014;{35,6,1,7};1;http://doramatv.ru/it_s_okay__that_s_love
+24;29359;School 2013;4,27;1819;1;2012;{6,1};1;http://doramatv.ru/school_2013
+25;28842;Rooftop Prince;4,29;1757;1;2012;{7,12,1};1;http://doramatv.ru/the_rooftop_prince
+26;26856;Faith;4,27;1838;1;2012;{5,45,25,7,12,35};1;http://doramatv.ru/faith
+27;25909;K-POP - The Ultimate Audition;3,76;1723;1;2012;{32,7,6};1;http://doramatv.ru/k_pop__the_ultimate_audition
+28;43044;School 2015: Who Are You?;4,4;1773;1;2015;{6,7,25};1;http://doramatv.ru/who_are_you___school_2015
+29;32356;Monstar;3,79;1660;1;2013;{32,6,7};1;http://doramatv.ru/monstar
+30;45398;Cheese in the Trap;4,24;1827;1;2016;{6,7};1;http://doramatv.ru/cheese_in_the_trap
+31;49950;W;4,54;1758;1;2016;{6,7,26};1;http://doramatv.ru/w___two_worlds
+32;24328;Love Rain;4,05;1676;1;2012;{6,7};1;http://doramatv.ru/love_rain
+33;25711;49 Days;4,26;1634;1;2011;{6,7,12};1;http://doramatv.ru/49_days
+34;42768;EXO Next Door;4,17;1705;1;2015;{7,32,1};1;http://doramatv.ru/exo_next_door
+35;35619;Emergency Man and Woman;4,21;1448;1;2014;{7,1,35};1;http://doramatv.ru/emergency_man_and_woman
+36;47638;Descendants of the Sun;4,61;1530;1;2016;{7,6,35};1;http://doramatv.ru/descendants_of_the_sun
+37;36057;Bride of the Century;4,17;1394;1;2014;{10,6,7,12};1;http://doramatv.ru/bride_of_the_century
+38;45251;Oh My Venus;4,35;1371;1;2015;{6,7,1};1;http://doramatv.ru/oh_my_venus
+39;20688;Running Man;4,83;1602;2017;2010;{1};1;http://doramatv.ru/running_man__2013
+40;11033;My Girlfriend is a Gumiho;4;1305;1;2010;{6,1,7,12};1;http://doramatv.ru/my_girlfriend_is_a_nine_tailed_fox
+41;30494;A Gentleman's Dignity;4,47;1308;1;2012;{7,6,1};1;http://doramatv.ru/gentleman_s_dignity
+42;27488;Reply 1997;4,39;1283;1;2012;{6,1};1;http://doramatv.ru/reply_1997
+43;51276;Goblin;4,75;1452;1;2016;{12,6,7};1;http://doramatv.ru/goblin
+44;24329;White Christmas;4,48;1489;1;2011;{26,6};1;http://doramatv.ru/white_christmas
+45;25567;Big;3,99;1238;1;2012;{7,1,6};1;http://doramatv.ru/big
+46;50093;Cinderella and the Four Knights;4,25;1325;1;2016;{7,1,6};1;http://doramatv.ru/cinderella_and_four_knights
+47;37785;Marriage, Not Dating;4,2;1211;1;2014;{7,1};1;http://doramatv.ru/marriage_not_dating
+48;15137;Sungkyunkwan Scandal;4,3;1231;1;2010;{1,45,7};1;http://doramatv.ru/sungkyunkwan_scandal
+49;49994;Moon Lovers: Scarlet Heart Ryeo;4,59;1377;1;2016;{45,7,12};1;http://doramatv.ru/moon_lovers__scarlet_heart_ryeo
+50;45443;Moorim School;4,1;1198;1;2016;{4,6,7,12};1;http://doramatv.ru/moorim_school
+51;43421;High Society;3,85;1097;1;2015;{1,7,10,6};1;http://doramatv.ru/high_society
+52;38416;The Mermaid;3,75;1151;1;2014;{7,12,1};1;http://doramatv.ru/the_mermaid
+53;35003;Exo Showtime;4,45;1155;1;2013;{37,32};0;http://doramatv.ru/exo_s_showtime
+54;37579;King of High School Life Conduct;4,03;1044;1;2014;{1,7};1;http://doramatv.ru/king_of_high_school_life_conduct
+55;43655;Remember You;4,43;1012;1;2015;{26,25,7};1;http://doramatv.ru/remember_you
+56;42539;The Girl Who Can See Smells;4,15;1030;1;2015;{7,1,12,26,6};1;http://doramatv.ru/the_girl_who_sees_smells
+57;42175;Blood;3,86;1024;1;2015;{35,12,7};1;http://doramatv.ru/orochi__blood
+58;37167;Doctor Stranger;4,12;1007;1;2014;{7,35,6};1;http://doramatv.ru/doctor_stranger
+59;41865;Hyde, Jekyll, Me;3,71;976;1;2015;{1,7};1;http://doramatv.ru/hyde_jekyll__me
+60;37168;You're All Surrounded;4,27;960;1;2014;{1,7,4};1;http://doramatv.ru/you_re_all_surrounded
+61;34606;Bel Ami;3,57;1036;1;2013;{1,7,6};1;http://doramatv.ru/beautiful_guy
+62;49983;The Legend of the Blue Sea;4,3;1038;1;2016;{7,12,1};1;http://doramatv.ru/the_legend_of_the_blue_sea
+63;43099;Orange Marmalade;3,4;993;1;2015;{12,7};1;http://doramatv.ru/orange_marmalade
+64;26055;Queen Inhyun's Man;4,35;946;1;2012;{34,50,11,31,7,30,45,6,37,5,4};1;http://doramatv.ru/queen_in_hyun_s_man
+65;44497;Cheer Up!;4,38;981;1;2015;{7,6,1};1;http://doramatv.ru/sassy_go_go
+66;31591;Protect the Boss;3,85;886;1;2011;{7,6,1};1;http://doramatv.ru/protect_the_boss
+67;32739;Who Are You?;3,99;902;1;2013;{26,25,7};1;http://doramatv.ru/who_are_you
+68;49286;Let's Fight Ghost;4,3;879;1;2016;{12,6,1};1;http://doramatv.ru/let_s_fight_ghost
+69;38060;Fated to Love You;4,08;876;1;2014;{6};1;http://doramatv.ru/fated_to_love_you__korea
+70;31761;Gu Family Book;4,31;886;1;2013;{25,7,45,6,28};1;http://doramatv.ru/gu_family_book
+71;31599;Me Too, Flower;3,87;831;1;2011;{7};1;http://doramatv.ru/i_m_a_flower_too
+72;48002;Uncontrollably Fond;4,1;878;1;2016;{7,6};1;http://doramatv.ru/uncontrollably_fond
+73;50527;Weightlifting Fairy Kim Bok Joo;4,7;891;1;2016;{44,7,6};1;http://doramatv.ru/weightlifting_fairy_kim_bok_joo
+74;34753;Weekly Idol ;4,61;877;1;2011;{37,1};0;http://doramatv.ru/weekly_idol
+75;27585;The Innocent Man;4,25;805;1;2012;{6,7};1;http://doramatv.ru/nice_guy
+76;49205;Doctors;4,2;812;1;2016;{35,6};1;http://doramatv.ru/doctors
+77;37845;High School - Love On;4,05;820;1;2014;{7,6,12};1;http://doramatv.ru/high_school__love_on
+78;39375;Birth of a Beauty;3,84;793;1;2014;{1,7,6};1;http://doramatv.ru/birth_of_a_beauty
+79;27278;Ma Boy;3,59;783;1;2012;{1,2,18,7};1;http://doramatv.ru/ma_boy
+80;27350;The Moon That Embraces the Sun;4,23;771;1;2012;{12,45,25,6,7};1;http://doramatv.ru/the_moon_that_embraces_the_sun
+81;50522;The K2;4,19;753;1;2016;{6,4};1;http://doramatv.ru/the_k2
+82;34586;Empress Ki;4,55;968;1;2013;{45,4,6,36,7};1;http://doramatv.ru/empress_ki
+83;30067;Missing You (2012);3,95;745;1;2012;{6};1;http://doramatv.ru/i_miss_you
+84;37510;Roommate ;4,27;762;2;2014;{37,2,76,32};0;http://doramatv.ru/roommate__tv_show
+85;50358;Hwarang;4,56;863;1;2016;{6,45,7};1;http://doramatv.ru/hwarang
+86;33984;Secret Love;4,28;715;1;2013;{28,6,32,26,7};1;http://doramatv.ru/secret__2013
+87;38652;Show Me The Money (KR);4,4;752;4;2014;{37,32,96};0;http://doramatv.ru/show_me_the_money
+88;42718;The Lover;4,21;874;1;2015;{1,7};1;http://doramatv.ru/the_lover
+89;43817;Oh My Ghostess;4,35;683;1;2015;{6,7,1};1;http://doramatv.ru/oh_my_ghost
+90;26740;Lie to Me;3,86;711;1;2011;{1,7,6};1;http://doramatv.ru/try_lying_to_me
+91;29358;Cheongdamdong Alice;3,71;697;1;2012;{57,7,1};1;http://doramatv.ru/cheongdamdong_alice
+92;18305;Oh! My Lady;3,73;706;1;2010;{10,37,18,1,6,7,31,11};1;http://doramatv.ru/oh_my_lady
+93;48216;Madame Antoine;4,02;672;1;2016;{6,1,7};1;http://doramatv.ru/madame_antoine
+94;42684;Angry Mom;4,39;681;1;2015;{6,25,10};1;http://doramatv.ru/angry_mom
+95;38787;Liar Game (SK);4,28;734;1;2014;{25};1;http://doramatv.ru/liar_game__korea
+96;49210;Moonlight Drawn by Clouds;4,35;640;1;2016;{1,7,45};1;http://doramatv.ru/moonlight_drawn_by_clouds
+97;29865;Full House 2;3,94;612;1;2012;{7,1};1;http://doramatv.ru/full_house_2
+98;27399;the King 2 Hearts;4,17;603;1;2012;{6,4,1,36};1;http://doramatv.ru/the_king_2_hearts
+99;29499;Panda and Hedgehog;3,59;613;1;2012;{56,7,1};1;http://doramatv.ru/panda_and_hedgehog
+100;38788;Bad Guys;4,28;707;1;2014;{26,4,28};1;http://doramatv.ru/bad_guys
+101;34914;WIN: Who is Next?;4,4;589;1;2013;{37,38,32};0;http://doramatv.ru/win__who_is_next
+102;38747;BTS American Hustle Life;4,58;633;1;2014;{37};0;http://doramatv.ru/m_net__bts_american_hustle_life
+103;30811;That Winter, The Wind Blows;4,12;585;1;2013;{7,6};1;http://doramatv.ru/that_winter__the_wind_blows
+104;5812;IRIS;4,06;690;2;2009;{6,4,105};1;http://doramatv.ru/iris
+105;43053;Producer;3,97;566;1;2015;{1,7,6};1;http://doramatv.ru/producer
+106;34311;Reply 1994;4,13;577;1;2013;{1,2,6};1;http://doramatv.ru/reply_1994
+107;34032;Marry Him If You Dare;3,63;569;1;2013;{1,7,6};1;http://doramatv.ru/the_choice_of_the_future
+108;36947;Gap Dong;4,23;561;1;2014;{25,4,28,6,26};1;http://doramatv.ru/gap_dong
+109;38789;Modern Farmer;3,91;546;1;2014;{7,32};1;http://doramatv.ru/modern_farmer
+110;38780;She's So Lovable;3,59;527;1;2014;{6,32,7};1;http://doramatv.ru/too_lovely_girl_for_me
+111;27287;Arang and the Magistrate;3,87;529;1;2012;{12,7,1};1;http://doramatv.ru/arang_and_the_magistrate
+112;49029;Entertainer;4,05;505;1;2016;{6,7,1};1;http://doramatv.ru/entertainer
+113;30575;City Lovers;3,91;533;1;2010;{7,1};1;http://doramatv.ru/the_city_of_lovers
+114;26121;The Greatest Love;4,11;499;1;2011;{7,6,1};1;http://doramatv.ru/the_greatest_love
+115;35596;WINNER TV;4,6;490;1;2013;{37,1};0;http://doramatv.ru/winner__tv
+116;50792;Shopping King Louie;4,3;495;1;2016;{7,1,6};1;http://doramatv.ru/shopping_king_louie
+117;42191;Dream Knight;3,96;497;1;2015;{6,32};1;http://doramatv.ru/dream_knight
+118;42132;Unpretty Rapstar;3,97;513;3;2015;\N;0;http://doramatv.ru/unpretty_rapstar
+119;49913;Jealousy Incarnate;4,27;478;1;2016;{1,6,7};1;http://doramatv.ru/jealousy_incarnate
+120;39169;MIX & MATCH;4,39;475;1;2014;{38,32,96,37};0;http://doramatv.ru/mix___match
+121;2193;Full House;3,75;512;1;2004;{1,6,7};1;http://doramatv.ru/full_house
+122;1353;My Girl;3,93;510;1;2005;{1,7};1;http://doramatv.ru/my_girl
+123;48490;Come Back, Mister;4,14;464;1;2016;{6,1};1;http://doramatv.ru/come_back_mister
+124;38413;My Secret Hotel;3,7;458;1;2014;{25,1,7};1;http://doramatv.ru/my_secret_hotel
+125;44980;Answer Me 1988;4,6;471;1;2015;{6,7,1};1;http://doramatv.ru/reply_1988
+126;49060;Lucky Romance;4,12;461;1;2016;{1,6,7};1;http://doramatv.ru/lucky_romance
+127;49322;Beautiful Gong Shim;4,04;461;1;2016;{6,7,1};1;http://doramatv.ru/beautiful_gong_shim
+128;36060;Cunning Single Lady;3,91;465;1;2014;{1,7};1;http://doramatv.ru/cunning_single_lady
+129;32419;My Shining Girl;3,45;438;1;2012;{6,7,1};1;http://doramatv.ru/she_s_completely_insane
+130;34623;The Prime Minister and I;3,76;448;1;2013;{10,7,1};1;http://doramatv.ru/the_prime_minister_and_i
+131;33434;Dating Agency: Cyrano;3,74;436;1;2013;{7,1};1;http://doramatv.ru/dating_agency__cyrano
+132;43755;The Time We Were Not in Love;3,94;438;1;2015;{6,7};1;http://doramatv.ru/the_time_we_were_not_in_love
+133;20531;We Got Married ;4,16;456;4;2008;{37,1,34,7};0;http://doramatv.ru/list/person/we_got_married
+134;29494;The King of Dramas;4;441;1;2012;{7,1,6};1;http://doramatv.ru/the_king_of_dramas
+135;43858;Scholar Who Walks the Night;3,96;435;1;2015;{45,7,12};1;http://doramatv.ru/scholar_who_walks_the_night
+136;22772;Beethoven virus;4,07;533;1;2008;{6,7,32,1};1;http://doramatv.ru/beethoven_virus
+137;38756;Rookie King Channel Bangtan - Bangtan Boys;4,58;445;1;2013;{37};0;http://doramatv.ru/rookie_king_bangtan_boys___channel_bangtan
+138;36310;Hotel King;3,83;428;1;2014;{6};1;http://doramatv.ru/hotel_king
+139;43084;Ex-Girlfriend Club;3,96;416;1;2015;{7,1};1;http://doramatv.ru/ex_girlfriend_club
+140;29692;My Princess;3,77;405;1;2011;{1,6,7};1;http://doramatv.ru/my_princess
+141;32354;Nail Salon Paris;3,42;399;1;2013;{1,57,7};1;http://doramatv.ru/nail_salon_paris
+142;43382;Mask;4,09;383;1;2015;{7,6};1;http://doramatv.ru/mask 
+143;44117;Yong Pal;3,97;380;1;2015;{35,6};1;http://doramatv.ru/yong_pal
+144;36954;A Witch's Love;4,07;378;1;2014;{1,7};1;http://doramatv.ru/witch_s_romance
+145;48412;Page Turner;4,46;377;1;2016;{6,32};1;http://doramatv.ru/page_turner
+146;43222;Warm and Cozy;4,08;367;1;2015;{6,7};1;http://doramatv.ru/warm_and_cozy
+147;38019;Iron Man;3,39;365;1;2014;{7,6,12};1;http://doramatv.ru/iron_man
+148;30333;7th Grade Civil Servant;3,81;364;1;2013;{1,105,7,4};1;http://doramatv.ru/7th_grade_civil_servant
+149;51798;First Kiss for the Seventh Time;3,67;361;1;2016;{7,6};1;http://doramatv.ru/first_kiss_for_the_seventh_time
+150;25603;Spy Myung Wol;3,99;356;1;2011;{1,7};1;http://doramatv.ru/myung_wol_the_spy
+151;42672;Falling for Innocence;4,16;356;1;2015;{7,1,6};1;http://doramatv.ru/fall_in_love_with_soon_jung
+152;44458;D-Day;4,35;358;1;2015;{35,6};1;http://doramatv.ru/d_day
+153;29516;Vampire Prosecutor;4,07;406;2;2011;{28,6,12,25};1;http://doramatv.ru/vampire_prosecutor
+154;48213;Signal;4,72;424;1;2016;{28,26};1;http://doramatv.ru/signal
+155;51029;Sweet Stranger and Me;3,84;331;1;2016;{6,7,1};1;http://doramatv.ru/the_man_living_at_my_house
+156;39127;Pride and Prejudice (KR);3,8;345;1;2014;{7,6};1;http://doramatv.ru/pride_and_prejudice
+157;49986;Age of Youth;4,73;359;1;2016;{6,7,1};1;http://doramatv.ru/age_of_youth
+158;45397;Remember - War of the Son;4,22;318;1;2015;{6,26};1;http://doramatv.ru/remember___war_of_the_son
+159;52096;Missing Nine;4,23;328;1;2017;{5,26,6};1;http://doramatv.ru/missing_9
+160;35653;I Need Romance 3;4,14;312;1;2014;{6,7,1};1;http://doramatv.ru/i_need_romance_3
+161;48383;Vampire Detective;3,94;364;1;2016;{12,28,6};1;http://doramatv.ru/vampire_detective
+162;6509;Iljimae;4,4;339;1;2008;{45};1;http://doramatv.ru/iljimae
+163;39479;I GOT7;4,35;315;1;2014;{2,37};0;http://doramatv.ru/got7_on_v_app
+164;39340;Non-Summit/Abnormal Summit ;4,57;343;1;2014;{1};1;http://doramatv.ru/abnormal_summit
+165;41675;Heart to Heart;3,95;317;1;2015;{7,1,35};1;http://doramatv.ru/heart_to_heart
+166;2796;Sorry, I Love You;4,14;343;1;2004;{6,7};1;http://doramatv.ru/i_m_sorry__i_love_you
+167;37784;Trot Lovers;3,88;300;1;2014;{1,7,6,32};1;http://doramatv.ru/trot_lovers
+168;47639;One More Happy Ending;4,09;305;1;2016;{7,6};1;http://doramatv.ru/one_more_happy_ending
+169;36121;Cinderella's Stepsister;3,76;304;1;2010;{6,7};1;http://doramatv.ru/cinderella_s_sister
+170;48225;Local Hero;3,82;301;1;2016;{1,28,4};1;http://doramatv.ru/neighborhood_s_hero
+171;49453;Police Unit 38;4,06;301;1;2016;{1,6,28};1;http://doramatv.ru/38_task_force
+172;49232;Mirror of the Witch;3,68;306;1;2016;{45,12,30,6,7};1;http://doramatv.ru/mirror_of_the_witch
+173;50054;Entourage;3,78;295;1;2016;{1,6};1;http://doramatv.ru/entourage
+174;39651;XOXO EXO;4,14;297;1;2014;{32,37};0;http://doramatv.ru/xoxo_exo
+175;50412;Drinking Solo;4,3;305;1;2016;{1,6,7};1;http://doramatv.ru/drinking_solo
+176;32740;Green Scalpel;4,37;288;1;2013;{35,7,6};1;http://doramatv.ru/good_doctor
+177;30546;Shining Inheritance;3,97;281;1;2009;{1,6,7,10};1;http://doramatv.ru/shining_inheritance
+178;32517;Cruel City;4,46;328;1;2013;{7,6,26,4,28};1;http://doramatv.ru/cruel_city
+179;4893;Tree in Heaven;3,63;302;1;2006;{6};1;http://doramatv.ru/tree_of_heaven
+180;22250;Scent of a Woman;4,18;278;1;2011;{6,7};1;http://doramatv.ru/scent_of_a_woman
+181;24330;What's Up;4,06;288;1;2011;{6,1};1;http://doramatv.ru/what_s_up
+182;14953;Hong Gil Dong;4,26;360;1;2008;{7,4,1};1;http://doramatv.ru/sharp_blade_hong_gil_dong
+183;49209;Another Oh Hae Young;4,21;272;1;2016;{7,1};1;http://doramatv.ru/another_oh_hae_young
+184;34599;Fashion King;3,24;271;1;2012;{7,6};1;http://doramatv.ru/fashion_king
+185;45425;Splash Splash Love;4,43;264;1;2015;{7,45,6,12};1;http://doramatv.ru/splash_splash_love
+186;24484;The Fugitive: Plan B;4,05;270;1;2010;{6,4,1,7};1;http://doramatv.ru/the_fugitive__plan_b
+187;36316;Angel Eyes;3,89;268;1;2014;{7,35,10};1;http://doramatv.ru/angel_eyes
+188;27348;The Princess' Man;4,34;272;1;2011;{45,6,7};1;http://doramatv.ru/the_princess__man
+189;29498;Prosecutor Princess;3,88;260;1;2010;{7,1,28,6};1;http://doramatv.ru/prosecutor_princess
+190;34017;I need romance;3,8;256;1;2011;{6,7,1};1;http://doramatv.ru/i_need_romance
+191;2418;Time Between Dog and Wolf;4,05;277;1;2007;{7,4};1;http://doramatv.ru/time_of_dog_and_wolf
+192;38785;Misaeng;4,39;271;1;2014;{6};1;http://doramatv.ru/incomplete_life__prequel
+193;50422;Hit the Stage;4,57;251;1;2016;\N;1;http://doramatv.ru/hit_the_stage
+194;26851;Time Slip Dr. Jin;3,61;257;1;2012;{35,12,45};1;http://doramatv.ru/time_slip_dr__jin
+195;32446;Two Weeks;4,21;257;1;2013;{28,6,4,26};1;http://doramatv.ru/two_weeks
+196;35204;Let's Eat;4,21;262;2;2013;{6,1,7};1;http://doramatv.ru/let_s_eat
+197;44510;The Village: Achiara's Secret;4,06;266;1;2015;{6,26};1;http://doramatv.ru/the_village__achiara_s_secret
+198;2794;A Love to Kill;3,85;262;1;2005;{4,6};1;http://doramatv.ru/a_love_to_kill
+199;27513;Coffee House;3,5;262;1;2010;{31,6,7,1};1;http://doramatv.ru/coffee_house
+200;44353;Twenty Again;4,19;243;1;2015;{7,1};1;http://doramatv.ru/twenty_again
+201;44483;Because It's the First Time;4,07;240;1;2015;{7,1};1;http://doramatv.ru/because_it_s_the_first_time
+202;36055;God's Gift - 14 Days;4,55;248;1;2014;{26,6};1;http://doramatv.ru/god_s_gift___14_days
+203;39406;Dr. Frost;3,67;267;1;2014;{26,28};1;http://doramatv.ru/dr__frost
+204;25676;Bad Guy;3,98;241;1;2010;{26,7,6};1;http://doramatv.ru/bad_guy
+205;34622;Miss Korea;3,43;246;1;2013;{7,6};1;http://doramatv.ru/miss_korea
+206;31878;Pasta;4,1;253;1;2010;{56,6,7};1;http://doramatv.ru/pasta
+207;44621;Nice Guy;4,02;234;1;2012;{6,7};1;http://doramatv.ru/nice_guy
+208;36059;Her Lovely Heels;3,48;225;1;2014;{7};1;http://doramatv.ru/her_lovely_heels
+209;37249;Triangle;4,02;224;1;2014;{6,4,28,7};1;http://doramatv.ru/triangle__2014
+210;38782;The Greatest Marriage;3,72;225;1;2014;{6,1,7};1;http://doramatv.ru/the_greatest_wedding
+211;31608;INFINITE's Ranking King;4,48;219;1;2012;{37,1};0;http://doramatv.ru/infinite_s_king_of_ranking
+212;30886;Explorers Of The Human Body;4,48;259;1;2007;{1,33,43};0;http://doramatv.ru/explorers_of_the_human_body
+213;42780;My Unfortunate Boyfriend;3,69;223;1;2015;{7,1};1;http://doramatv.ru/my_unfortunate_boyfriend
+214;32116;Take Care of Agasshi /My Fair Lady;3,71;219;1;2009;{1,7};1;http://doramatv.ru/take_care_of_agassi
+215;34919;Phantom;4,35;222;1;2012;{6,25};1;http://doramatv.ru/ghost__2012
+216;43103;SIXTEEN (JYP);4,08;220;1;2015;{11,96,38,2};0;http://doramatv.ru/sixteen
+217;43827;Fall in Love with Soon-Jung;4,11;220;1;2015;{1,6};1;http://doramatv.ru/fall_in_love_with_soon_jung
+218;50478;BTS Bon Voyage;4,87;237;1;2016;{1};0;http://doramatv.ru/bts_bon_voyage
+219;30820;Nine: Nine Time Travels;4,02;224;1;2013;{7,6};1;http://doramatv.ru/nine__nine_times_time_travel
+220;43780;We broke up;3,83;212;1;2015;{7,6,1};1;http://doramatv.ru/we_broke_up
+221;38793;Twenty Years Old;3,75;212;1;2014;{7,2};1;http://doramatv.ru/twenty_years_old
+222;12584;Athena: Goddess of War;3,82;233;1;2010;{26,4,105};1;http://doramatv.ru/athena__goddes_of_war
+223;33931;I need romance 2012;3,72;205;1;2012;{6,7};1;http://doramatv.ru/i_need_romance_2
+224;42117;Ho Goo's Love;3,98;207;1;2015;{7,1};1;http://doramatv.ru/ho_goo_s_love
+225;36686;This is INFINITE;4,37;200;1;2014;{37};0;http://doramatv.ru/this_is_infinite
+226;49611;Beautiful Mind;4,41;207;1;2016;{35,6,26};1;http://doramatv.ru/beautiful_mind
+227;36566;Secret Love Affair;3,85;213;1;2014;{7,6,32};1;http://doramatv.ru/secret_love_affair
+228;38014;Plus Nine Boys;4,14;200;1;2014;{6,7,1};1;http://doramatv.ru/plus_nine_boys
+229;34609;Age of feeling: Inspiring generation;3,8;211;1;2014;{6,36,4,45,7};1;http://doramatv.ru/age_of_feeling
+230;38748;Hitmaker;4,22;196;2;2014;{37};0;http://doramatv.ru/hit_maker
+231;38018;The Night Watchman;3,6;203;1;2014;{26,12,7,6,45};1;http://doramatv.ru/night_watchman_s_journal
+232;45365;Imaginary Cat;3,94;229;1;2015;\N;1;http://doramatv.ru/imaginary_cat
+233;44897;Bubblegum;3,59;195;1;2015;{6,7};1;http://doramatv.ru/bubblegum
+234;51394;Positive Physique;4,15;200;1;2016;{7,6};1;http://doramatv.ru/be_positive
+235;20894;Strong Heart;4,42;196;1;2009;{37,54};0;http://doramatv.ru/strong_heart
+236;38020;Cantabile Tomorrow;3,84;201;1;2014;{1,32,7};1;http://doramatv.ru/naeil_s_cantabile
+237;51139;Something About 1%;4,21;194;1;2016;{7,1};1;http://doramatv.ru/something_about_1___2016_
+238;31762;B.A.P's Killing Camp;4,38;190;1;2012;{37,1};1;http://doramatv.ru/b_a_p_s_killing_camp
+239;45285;I Remember You;4,45;201;1;2015;{1,25,7,26};1;http://doramatv.ru/i_remember_you
+240;29480;Paradise Ranch;3,54;191;1;2011;{10,7,104,1,6};1;http://doramatv.ru/paradise_ranch
+241;52003;Introverted Boss;3,7;190;1;2017;{1,7};1;http://doramatv.ru/introverted_boss
+242;32208;Infinite Challenge;4,56;192;4;2005;{1};0;http://doramatv.ru/infinity_challenge
+243;42125;NO.MERCY ;4,26;190;1;2014;{11,96};0;http://doramatv.ru/mnet_no_mercy
+244;2793;My Lovely Sam Soon;4,04;194;1;2005;{6,7,1};1;http://doramatv.ru/my_name_is_kim_sum_soon
+245;32475;SHINee One Fine Day;4,66;186;1;2013;{37,50};0;http://doramatv.ru/shinee_s_one_fine_day
+246;41634;Persevere, Goo Hae Ra;3,77;183;1;2015;{32,7};1;http://doramatv.ru/persevere__goo_hae_ra
+247;34033;Medical Top Team;4,06;195;1;2013;{35,7};1;http://doramatv.ru/medical_top_team
+248;48474;Choco Bank;3,97;185;1;2016;{6,7,1};1;http://doramatv.ru/choco_bank
+249;48579;Marriage Contract;4,18;181;1;2016;{7,6};1;http://doramatv.ru/marriage_contract
+250;32418;Warrior Baek Dong Soo;4,16;179;1;2011;{6,4};1;http://doramatv.ru/warrior_baek_dong_soo
+251;35443;K-pop Star;4,16;179;4;2011;\N;0;http://doramatv.ru/k_pop_star
+252;38570;5 Minute Before Chaos;4,58;186;1;2014;{37,1,38,32};0;http://doramatv.ru/block_b___5_minutes_before_chaos
+253;45328;INFINITE Showtime;4,71;178;1;2015;\N;0;http://doramatv.ru/showtime_infinite
+254;48185;MONSTA X's Right Now;4,73;186;1;2016;\N;0;http://doramatv.ru/monsta_x_s_right_now
+255;48782;Nightmare Teacher;4,18;192;1;2016;{6,25};1;http://doramatv.ru/nightmare_teacher
+256;37155;Showtime: Burning the Beast;4,55;178;1;2014;{34,48,32,1,37};0;http://doramatv.ru/showtime___burning_the_beast
+257;32345;You're the Best, Lee Soon Shin;3,7;175;1;2013;{10,1};1;http://doramatv.ru/lee_soon_shin_is_the_best
+258;48352;High-end Crush;3,98;175;1;2015;{6,7};1;http://doramatv.ru/high_end_crush
+259;42965;A Divorce Lawyer in Love;3,57;174;1;2015;{7,6,1};1;http://doramatv.ru/divorce_lawyer_in_love
+260;33519;Bridal Mask;4,1;179;1;2012;{4,45,6};1;http://doramatv.ru/bridal_mask
+261;39538;90:2014;4,03;173;1;2014;{37,32};0;http://doramatv.ru/k_pop_time_slip__exo_90_2014
+262;38017;Finding True Love;3,82;172;1;2014;{7,1};1;http://doramatv.ru/discovery_of_love
+263;33730;When a Man Loves;3,64;176;1;2013;{7,6};1;http://doramatv.ru/when_a_man_loves
+264;30788;Can You Hear My Heart?;3,97;170;1;2011;{10,7,6};1;http://doramatv.ru/can_you_hear_my_heart
+265;34877;King of Baking, Kim Tak Goo;4,15;176;1;2010;{7,113,6,10};1;http://doramatv.ru/king_of_baking__kim_tak_goo
+266;41678;Spy (SK);3,39;172;1;2015;{4,10,7,26};1;http://doramatv.ru/spy
+267;38547;The Three Musketeers (SK);3,87;169;3;2014;{45,7,36,5,4,6};1;http://doramatv.ru/the_three_musketeers
+268;31360;Ta-Dah! It's B.A.P;4,19;162;1;2012;{54,1};0;http://doramatv.ru/ta_dah__it_s_b_a_p
+269;34025;The Secret Angel;3,55;156;1;2012;{7,6,1,12,25};1;http://doramatv.ru/the_secret_angel
+270;34226;God's Quiz;4,49;180;4;2010;{35,25,28};1;http://doramatv.ru/god_s_quiz
+271;36056;Mimi;3,78;162;1;2014;{7};1;http://doramatv.ru/mimi
+272;44609;Noble, My Love;4,03;156;1;2015;{6,7};1;http://doramatv.ru/noble__my_love
+273;33131;Jang Ok Jung, Living in Love;4,23;171;1;2013;{6,7,45};1;http://doramatv.ru/jang_ok_jung__living_in_love
+274;49199;Half-moon Friends;4,82;158;1;2016;\N;0;http://doramatv.ru/half_moon_friends
+275;35352;Hello Baby;4,2;157;7;2009;{10,1,18,37};0;
+276;48266;Produce 101;4,02;160;1;2016;\N;0;http://doramatv.ru/produce_101
+277;47641;Goodbye Mr. Black;3,65;151;1;2016;{26,6,7};1;http://doramatv.ru/goodbye_mr__black
+278;51441;Romantic Doctor, Teacher Kim;4,2;154;1;2016;{7,35,6};1;http://doramatv.ru/romantic_doctor__teacher_kim
+279;48789;Celebrity Bromance;4,47;155;1;2016;\N;0;http://doramatv.ru/celebrity_bromance
+280;37248;Grandpas Over Flowers Investigation Team;4,08;154;1;2014;{28,1};1;http://doramatv.ru/grandpas_over_flowers_investigation_team
+281;2559;Princess Hours;3,84;154;1;2006;{6};1;http://doramatv.ru/palace
+282;37706;After School Club;3,86;149;1;2013;{1,32,54,38,37};0;http://doramatv.ru/after_school_club
+283;39458;Valid Love;3,38;146;1;2014;{7};1;http://doramatv.ru/valid_love
+284;42793;Fluttering India;4,36;143;1;2015;{50,37};0;http://doramatv.ru/fluttering_india
+285;48764;Jackpot;3,96;145;1;2016;{45,6};1;http://doramatv.ru/jackpot
+286;49922;The Good Wife;4,39;238;1;2016;{6};1;http://doramatv.ru/the_good_wife
+287;36061;Three Days;3,94;148;1;2014;{26,7,36,25,28,4};1;http://doramatv.ru/3_days
+288;49123;NCT Life;4,52;145;4;2016;\N;0;
+289;32065;Family Outing;4,47;148;2;2008;{1};0;http://doramatv.ru/family_outing
+290;42311;VIXX One Fine Day;4,59;137;1;2015;{34,37,1};0;http://doramatv.ru/vixx_one_fine_day
+291;49650;Wanted;4,39;144;1;2016;{28,6,26,4};1;http://doramatv.ru/wanted
+292;37723;Wild Romance;3,76;137;1;2012;{26,1,6,7};1;http://doramatv.ru/wild_romance
+293;43082;Vampire's Flower;3,31;147;1;2014;{12,6};1;http://doramatv.ru/vampire_s_flower
+294;32858;Barefoot Friends;3,69;135;1;2013;{50,37,1};0;http://doramatv.ru/barefoot_friends
+295;1352;Goong S;3,3;146;1;2007;{6,1};1;http://doramatv.ru/goong_s
+296;35725;The thousandth man;3,51;136;1;2012;{6,12,7};1;http://doramatv.ru/the_thousandth_man
+297;39387;Mr. Baek;3,86;133;1;2014;\N;1;http://doramatv.ru/mr__back
+298;43636;Hidden Identity;3,91;134;1;2015;{4,26,28};1;http://doramatv.ru/hidden_identity
+299;33915;Operation Proposal;3,52;131;1;2012;{7,6,12};1;http://doramatv.ru/operation_love__korea
+300;39551;I Do, I Do;3,61;130;1;2012;{1,7};1;http://doramatv.ru/i_do__i_do
+301;35052;One Well-Raised Daughter;3,81;142;1;2013;{7,10};1;http://doramatv.ru/a_well_grown_daughter__hana
+302;38561;The Return of Superman;4,42;134;1;2013;{1,10,18,37};0;http://doramatv.ru/return_of_superman
+303;42750;Missing Noir M;4,27;140;1;2015;{4,26,28};1;http://doramatv.ru/missing_noir_m
+304;43231;The Girl at Midnight;3,72;126;1;2015;{7,1};1;http://doramatv.ru/midnight_s_girl
+305;6655;Que Sera, Sera;3,78;126;1;2007;{7,6};1;http://doramatv.ru/que_sera__sera
+306;32878; She is WOW;3,3;130;1;2013;{1,6,7,28};1;http://doramatv.ru/she_is_wow
+307;34034;Cheo Yong;3,8;143;2;2014;{26,30,28,4};1;http://doramatv.ru/the_ghost_seeing_detective_cheo_yong
+308;43442;My Love Eun Dong;3,86;125;1;2015;{6,7};1;http://doramatv.ru/my_love_eun_dong
+309;31588;Vampire idol;3,87;134;1;2011;{1,12};1;http://doramatv.ru/vampire_idol
+310;39605;Rookie King: Channel Bangtan;4,6;128;1;2013;{37,2};0;http://doramatv.ru/rookie_king_bangtan_boys___channel_bangtan
+311;36796;Hello My Teacher;3,85;128;1;2005;{1,7,6};1;http://doramatv.ru/hello_my_teacher
+312;37640;The Joseon Shooter;3,72;122;1;2014;{7,45,6};1;http://doramatv.ru/the_joseon_shooter
+313;32444;The Queen's Classroom;4,18;133;1;2013;{18,2,6,1};1;http://doramatv.ru/the_queen_s_classroom__korea
+314;41867;Shine or Go Crazy;3,93;124;1;2015;{45,7,12,6};1;http://doramatv.ru/shine_or_go_crazy
+315;31633;Baby-faced Beauty;3,37;119;1;2011;{7,1,6};1;http://doramatv.ru/babyfaced_beauty
+316;12050;Autumn in My Heart;3,94;132;1;2000;{6,7,10};1;http://doramatv.ru/autumn_in_my_heart
+317;2715;Sassy Girl, Chun-hyang;3,81;130;1;2005;{1,6};1;http://doramatv.ru/delightful_girl_choon_hyang
+318;28156;Ghost;4,3;126;1;2002;{6};1;http://doramatv.ru/be_with_me
+319;33059;You Are My Oppa;3,96;113;1;2010;{1,37,34};0;http://doramatv.ru/you_are_my_oppa
+320;51586;Voice;4,71;118;1;2017;{28,26};1;http://doramatv.ru/voice__2017_
+321;27299;New Tales of Gisaeng;4,11;115;1;2011;{6,7};1;http://doramatv.ru/new_tales_of_gisaeng
+322;34075;Waiting for Love;4,03;110;1;2013;{7,6};1;http://doramatv.ru/waiting_for_love
+323;36946;Big Man;3,52;112;1;2014;{26,7,6};1;http://doramatv.ru/big_man
+324;29553;Obstetrics and Gynecology Doctors;4,05;111;1;2010;{6,35};1;http://doramatv.ru/obstetrics_and_gynecology_doctors
+325;33729;Yoo-ryeong;4,46;119;1;2012;{36,6,28,4};1;http://doramatv.ru/ghost__2012
+326;34074;Suspicious Housekeeper;3,96;106;1;2013;{6};1;http://doramatv.ru/the_suspicious_housekeeper
+327;34272;City Hall (2009);4,08;104;1;2009;{7};1;http://doramatv.ru/the_city_hall
+328;30501;Padam Padam: The Sound of His and Her Heartbeats;3,94;104;1;2011;{7,12};1;http://doramatv.ru/padam_padam____the_sound_of_his_and_her_heartbeats
+329;30819;Queen of Ambition;3,74;111;1;2013;{31,36,6,7};1;http://doramatv.ru/queen_of_ambition
+330;36207;VIXX MyDol;4,23;101;1;2012;{32,37,96};0;http://doramatv.ru/my_dol_with_vixx
+331;39596;The King's Face;3,41;108;1;2014;{6,7,26,45};1;http://doramatv.ru/the_king_s_face
+332;43497;My Beautiful Bride;3,95;104;1;2015;{26,25,28,4};1;http://doramatv.ru/my_beautiful_bride
+333;43529;4 Things Show;4,34;99;2;2014;{54,34,37};0;http://doramatv.ru/4_things_show
+334;44124;Mrs. Cop;4,03;115;2;2015;{26,28,6};1;http://doramatv.ru/mrs__cop
+335;32457;The Goddess of Fire, Jung-Yi;3,81;107;1;2013;{45,7};1;http://doramatv.ru/the_goddess_of_fire__jung_yi
+336;48633;Falling for Challenge;4,18;105;1;2015;\N;1;http://doramatv.ru/falling_for_challenge
+337;34605;Golden Rainbow;3,92;97;1;2013;{7,6,10};1;http://doramatv.ru/the_golden_rainbow
+338;41984;2NE1 TV;4,19;98;3;2009;{37};0;
+339;32945;The Painter of the Wind;4,02;110;1;2008;{45,6,7};1;http://doramatv.ru/the_painter_of_the_wind
+340;6788;18, 29;3,77;103;1;2005;{6,1};1;http://doramatv.ru/18_vs__29
+341;45163;Secret Message;3,82;100;1;2015;\N;1;http://doramatv.ru/secret_message
+342;51885;The Miracle;3,78;102;1;2016;{12,7,10};1;http://doramatv.ru/the_miracle
+343;1854;Yu-hee, the Witch;3,38;101;1;2007;{6,1,7};0;
+344;42771;Let's Eat 2;3,98;95;2;2015;{6,1,7};1;http://doramatv.ru/let_s_eat_2
+345;43957;I Order For You;3,79;95;1;2015;{7,1,56};1;http://doramatv.ru/i_order_you
+346;4734;The Man of the Vineyard;3,93;96;1;2006;{6};1;http://doramatv.ru/the_vineyard_man
+347;37646;Secret Love - Kara;3,83;91;1;2014;{7};1;http://doramatv.ru/secret_love__kara
+348;28083;May Queen;4,42;95;1;2012;{6,7,10};1;http://doramatv.ru/may_queen
+349;37166;A New Leaf;3,28;94;1;2014;{7,6};1;http://doramatv.ru/a_new_leaf
+350;42189;Heard It Through the Grapevine;4,16;92;1;2015;{6,10,1};1;http://doramatv.ru/heard_it_through_the_grapevine
+351;42845;VIXX TV;4,58;91;2;2012;{34,37};0;http://doramatv.ru/vixx_tv
+352;35861;Special Affairs Team TEN;4,15;97;2;2011;{4,26,28};1;http://doramatv.ru/special_affairs_team_ten
+353;37852;Jessica & Krystal;4,26;94;1;2014;{10,37,7};0;http://doramatv.ru/jessica___krystal___cover_girls
+354;38096;B.A.P Attack!;4,6;90;1;2014;{37,50};0;http://doramatv.ru/b_a_p_attack_
+355;42732;Idol Star Athletics Championships;4;92;1;2010;{44,37};0;http://doramatv.ru/idol_star_athletics_championships
+356;44477;Six Flying Dragons;4,59;97;1;2015;{4,45,6};1;http://doramatv.ru/six_flying_dragons
+357;48627;No Mercy;4,48;99;1;2014;{32};0;http://doramatv.ru/mnet_no_mercy
+358;23153;Star King ;4,13;93;1;2007;{18,11,32,10,38,37};0;http://doramatv.ru/star_king
+359;43795;King of Mask Singer;4,41;92;1;2015;{37,32};0;http://doramatv.ru/mystery_music_show__king_of_mask_singer
+360;43584;Seventeen Project;4,2;96;1;2015;{32,37,2};0;http://doramatv.ru/seventeen_project__debut_big_plan_
+361;24486;I Am Sam;3,17;93;1;2007;{7,1,6};1;http://doramatv.ru/i_am_sam
+362;43018;Dr. Mo Clinic;3,51;85;1;2015;{1,7};1;http://doramatv.ru/dr__mo_clinic
+363;51274;My Wife's Having an Affair This Week;3,88;85;1;2016;{6,7,1};1;http://doramatv.ru/my_wife_s_having_an_affair_this_week
+364;2294;The Legend;4,27;105;1;2007;{5,12,6};1;http://doramatv.ru/the_story_of_the_first_king_s_four_gods
+365;45263;Boys Over Flowers;4,27;94;1;2009;{6,7,1};1;http://doramatv.ru/boys_over_flowers__korea
+366;36099;Adolescence Medley;3,75;83;1;2013;{7,6,1};1;http://doramatv.ru/adolescence_medley
+367;15340;Hwang Jin Yi;4,57;141;1;2006;{6,45};1;http://doramatv.ru/hwang_jin_yi
+368;29488;A Thousand Kisses;3,6;85;1;2011;{7,6};1;http://doramatv.ru/a_thousand_kisses
+369;38180;We Got Married: Global Edition;3,78;82;2;2013;{7};0;http://doramatv.ru/we_got_married_global
+370;6173;Winter Sonata;3,87;105;1;2002;{6,7};1;http://doramatv.ru/winter_sonata
+371;24480;Haru : An Unforgettable Day in Korea;3,59;84;1;2010;{7,4,1,6,32};1;http://doramatv.ru/haru__an_unforgettable_day_in_korea
+372;7940;Dal Ja's Spring;3,94;82;1;2007;{1,7,6};1;http://doramatv.ru/dal_ja_s_spring
+373;32196;Ojakkyo Brothers;3,89;79;1;2011;{7,10};1;http://doramatv.ru/ojakkyo_brothers
+374;32738;Her Legend;3,73;82;1;2013;{6,7};1;http://doramatv.ru/her_legend
+375;43353;Love Cells;3,55;81;2;2011;{7,1,12};1;http://doramatv.ru/dating_dna
+376;36023;My name is Kim Sam Soon;4,04;82;1;2005;{7,1,6};1;http://doramatv.ru/my_name_is_kim_sum_soon
+377;42564;Super Daddy Yeol;3,7;80;1;2015;{10,1,6};1;http://doramatv.ru/super_daddy_yul
+378;43335;Problematic Men ;4,41;80;1;2015;{92,37};0;http://doramatv.ru/hot_brain__problematic_men
+379;6333;Snow White;3,4;86;1;2004;{7,1,6};1;http://doramatv.ru/snow_white
+380;42094;VIXX File;4,44;76;1;2013;{37};0;
+381;52342;The Universe's Star;4,29;81;1;2017;{12,7};1;http://doramatv.ru/three_color_fantasy__the_universe_s_star
+382;35019;Cain and Abel;4,09;82;1;2009;{7,6,4,35};1;http://doramatv.ru/cain_and_abel
+383;32955;Miss Ripley;3,5;74;1;2011;{6,7};1;http://doramatv.ru/miss_ripley
+384;42544;VIXX Plan V Diary;4,58;75;1;2013;{1,37};0;
+385;51557;GOT7's Hard Carry;4,76;82;1;2016;\N;0;http://doramatv.ru/got7_s_hard_carry
+386;43210;Masked Prosecutor;3,24;81;1;2015;{4,6,7,1};1;http://doramatv.ru/masked_prosecutor
+387;31612;Shinhwa Broadcast;4,65;78;2;2012;{1,37};1;http://doramatv.ru/shinhwa_broadcast
+388;51919;Solomon's Perjury;4,36;77;1;2016;{28,25,114};1;http://doramatv.ru/solomon_s_perjury__2016_
+389;52201;Defendant;4,65;74;1;2017;{114,26};1;http://doramatv.ru/defendant
+390;30745;The World That They Live In;3,95;72;1;2008;{6,7};1;http://doramatv.ru/the_world_that_they_live_in
+391;29171;Stars Falling From the Sky;3,74;73;1;2010;{1,7,6};1;http://doramatv.ru/stars_falling_from_the_sky
+392;31592;Can We Get Married?;3,41;71;1;2012;{7,6,10};1;http://doramatv.ru/can_we_get_married
+393;8871;Something About 1%;3,16;74;1;2003;{1,6};1;http://doramatv.ru/something_about_1___2016_
+394;42777;Where Is My Friend's Home;4,5;72;1;2015;{1,50,10};0;http://doramatv.ru/my_friend_s_home
+395;42980;MATCH UP: Block B Returns;4,48;73;1;2012;{32,1,37};0;http://doramatv.ru/match_up__block_b_returns
+396;38022;Temptation (2014);4,03;68;1;2014;{7,10};1;http://doramatv.ru/triangle__2014
+397;38790;The Spring Day of My Life;3,93;69;1;2014;{6,7,35};1;http://doramatv.ru/the_spring_days_of_my_life
+398;27301;Killer K;3,25;71;1;2011;{26,4};1;http://doramatv.ru/killer_k
+399;28084;Five Fingers (2012);4;69;1;2012;{32,7,6};1;http://doramatv.ru/five_fingers
+400;28579;Hero: Unseen Warfare;3,45;65;1;2009;{1};1;http://doramatv.ru/hero_unseen_warfare
+401;50580;Fantastic;3,67;66;1;2016;{1,6,7};1;http://doramatv.ru/fantastic
+402;32742;The Blade and Petal;3,1;68;1;2013;{7,6,4,45};1;http://doramatv.ru/the_blade_and_petal
+403;38769;Queen Seon Deok;3,94;77;1;2009;{45,6,7};1;http://doramatv.ru/queen_seon_duk
+404;48805;Bad Tempered Grown-ups;3,68;66;1;2016;{7,6,1};1;http://doramatv.ru/ms__temper___nam_jung_gi
+405;6820;Memories of Bali;3,75;68;1;2004;{6};1;http://doramatv.ru/what_happened_in_bali
+406;29603;Gyeoul Yeonga;3,95;122;1;2009;{7,29,6};1;http://doramatv.ru/winter_sonata
+407;48635;Monster;4,25;65;1;2016;{6,7,1};1;http://doramatv.ru/monster
+408;28895;History of the Salaryman;4,17;65;1;2012;{6,97,1};1;http://doramatv.ru/history_of_the_salaryman
+409;32458;Scandal (SK);4,11;112;1;2013;{7,28,6};1;http://doramatv.ru/scandal
+410;38548;Reset;3,83;66;1;2014;{25,26,28};1;http://doramatv.ru/reset
+411;42417;Super Junior Full House;4,22;61;1;2006;{37};0;
+412;43172;Mackerel Run;3,46;67;1;2007;{2,1};1;http://doramatv.ru/mackerel_run
+413;48705;Pied Piper;4,17;66;1;2016;{6,4,28,26};1;http://doramatv.ru/pied_piper
+414;2493;The Lucifer;3,94;72;1;2007;{7,6};1;http://doramatv.ru/the_devil
+415;7830;The Snow Queen (KR);3,74;62;1;2006;{6};1;http://doramatv.ru/the_snow_queen
+416;28063;Chuno;4,35;65;1;2010;{6,5,45};1;http://doramatv.ru/slave_hunters
+417;39640;The Virus;3,82;71;1;2013;{25,26,6};1;http://doramatv.ru/the_virus
+418;9935;All In;4,17;82;1;2003;{28,6,4};1;http://doramatv.ru/all_in
+419;15141;Soul Mate;3,97;69;1;2006;{6};1;http://doramatv.ru/soulmate
+420;22809;The Return of Iljimae;3,96;61;1;2009;{45,7};1;http://doramatv.ru/the_return_of_iljimae
+421;37609;Roommate;4,44;63;2;2014;\N;0;
+422;42783;I Can See Your Voice;4,32;60;3;2015;{11,32};0;
+423;51298;Star Show 360;4,35;61;1;2016;\N;0;
+424;51540;Bangtan Bomb;4,82;62;1;NA;\N;0;
+425;45316;Witch's Romance;4,21;60;1;2014;{7,1,6};1;http://doramatv.ru/witch_s_romance
+426;50254;Devil's Diary;3,79;62;1;2016;{1,6,7};1;http://doramatv.ru/devil_s_diary
+427;39227;Boarding House No. 24;4,15;63;1;2014;{1,7};1;http://doramatv.ru/boarding_house_number_24
+428;42412;Super Junior Mini-Drama;4,05;58;1;2006;{37};0;
+429;44030;A Song For You;3,8;60;4;2013;{1,32,54,37};0;
+430;50385;Our Gab Soon;4,08;57;1;2016;{10,7,6};1;http://doramatv.ru/our_gab_soon
+431;3011;Over the Rainbow (KR);3,7;61;1;2006;{6};1;http://doramatv.ru/over_the_rainbow
+432;30120;Tree With Deep Roots;4,32;60;1;2011;{45,6};1;http://doramatv.ru/tree_with_deep_roots
+433;50092;I'm Going to Touch You;3,57;55;1;2016;{6,7,1};1;http://doramatv.ru/i_m_going_to_touch_you
+434;27300;Soul;3,96;66;1;2009;{28,26,6,30,25,7};1;http://doramatv.ru/soul
+435;32513;9 End 2 Outs;4,03;58;1;2007;{1,7,6};1;http://doramatv.ru/9_end_2_outs
+436;35967;MTV Diary BtoB;4,45;55;1;2012;{37};0;
+437;39704;Saturday Night Live Korea;4,3;58;5;2011;{1,37,48};0;
+438;43982;One Sunny Day;4,07;57;1;2014;{7};1;http://doramatv.ru/one_sunny_day
+439;44616;Glamorous Temptation;3,58;55;1;2015;{10,7,6};1;http://doramatv.ru/glamorous_temptation
+440;50122;Tomorrow Boy;3,61;55;1;2016;{6,7};1;http://doramatv.ru/tomorrow_boy
+441;27224;Foxy Lady!;3,72;55;1;2006;{1,6};1;http://doramatv.ru/what_s_up__fox
+442;30431;Sirius;3,95;56;1;2013;{10,28,6};1;http://doramatv.ru/sirius
+443;38727;Manny;3,56;61;1;2011;{6};1;http://doramatv.ru/manny
+444;42992;Signal B - Block B;4,35;55;1;2013;{37,32,1};0;
+445;45284;Answer Me 1997;4,53;58;1;2012;{1,6,7};1;http://doramatv.ru/reply_1997
+446;52105;Tomorrow with You;5;53;1;2017;{12,6,7};1;http://doramatv.ru/tomorrow_with_you
+447;52173;Monsta X-ray;4,93;53;1;2017;\N;0;
+448;2308;Biscuit Teacher and Star Candy;3,82;56;1;2005;{6,1};1;http://doramatv.ru/hello_my_teacher
+449;30818;Ad Genius Lee Tae Baek;3,5;56;1;2013;{1,6,7};1;http://doramatv.ru/ad_genius_lee_tae_baek
+450;32516;Incarnation of Money;4;54;1;2013;{6};1;http://doramatv.ru/incarnation_of_money
+451;43370;I Love Lee Tae Ri;3,47;53;1;2012;{7,6};1;http://doramatv.ru/i_love_lee_tae_ri
+452;44184;Prince's Prince;3,62;59;1;2015;{6,1};1;http://doramatv.ru/prince_of_prince
+453;34634;High Kick Through the Roof;4,21;69;1;2009;{1,7};1;http://doramatv.ru/high_kick_through_the_roof
+454;43966;Sesame Player;4,43;51;3;2011;{54,37,32,34,2};0;
+455;49984;On the Way to the Airport;4,11;51;1;2016;{7,6};1;http://doramatv.ru/on_the_way_to_the_airport
+456;52231;Chief Kim;4,3;50;1;2017;{1};1;http://doramatv.ru/chief_kim
+457;26704;Capital Scandal;3,87;51;1;2007;{6,45,1,7};1;http://doramatv.ru/capital_scandal
+458;48623;TWICE Private Life;4,53;49;1;2016;\N;0;
+459;43081;One Mom and Three Dads;4,1;50;1;2008;{6,7};1;http://doramatv.ru/three_dads_and_one_mom
+460;1922;Jewel in the Palace;4,39;90;1;2003;{6,35,7,45};1;http://doramatv.ru/jewel_in_the_palace
+461;36406;All About My Romance;3,83;48;1;2013;{7,6,1};1;http://doramatv.ru/all_about_my_romance
+462;43819;Happy Together (TV-show);4,05;52;1;2001;{1,37};0;
+463;48784;Memory;4,27;47;1;2016;{6};1;http://doramatv.ru/memory
+464;50274;Second to Last Love;3,82;50;1;2016;{42,6,7};1;http://doramatv.ru/second_to_last_love
+465;3475;Loveholic;3,12;51;1;2005;{6};1;http://doramatv.ru/loveholic
+466;43362;Music Video Drama;4,46;51;1;2014;{32,6};0;
+467;44133;EXID Showtime;4,5;47;1;2015;{37,1,54};0;
+468;6810;Lovers (2006);3,93;47;1;2006;{6};1;http://doramatv.ru/lovers
+469;29356;Bad Couple (KR);3,13;48;1;2007;{6,1,7};1;http://doramatv.ru/defective_couple
+470;34588;High Kick! The Revenge of the Short Legged;4,15;46;1;2011;{1,10,7};1;http://doramatv.ru/high_kick_3__the_revenge_of_the_short_legged
+471;42462;Super Junior-M Guest House;4,08;45;1;2014;{50,37};0;
+472;27305;Dream of 400 Years;3,63;47;1;2011;{7,12,6};1;http://doramatv.ru/dream_of_400_years
+473;28891;East Of Eden (KR);3,92;49;1;2008;{10,4,6};1;http://doramatv.ru/east_of_eden
+474;35657;Take Care of Us, Captain;3,88;47;1;2012;{7,6,50};1;http://doramatv.ru/take_care_of_us__captain
+475;44118;Super Junior One Fine Day;4,54;44;1;2014;{50,54,37,34,32};0;
+476;44379;I Have a Lover;4,07;46;1;2015;\N;1;http://doramatv.ru/i_have_a_lover
+477;52253;Naked Fireman;4,1;45;1;2017;{6};1;http://doramatv.ru/naked_fireman
+478;37165;Glorious Day;4,21;44;1;2014;{7,6,10};1;http://doramatv.ru/glorious_day
+479;39128;The Legendary Witch;3,86;44;1;2014;{10,7};1;http://doramatv.ru/the_legendary_witch
+480;48992;My Little Baby;4,17;44;1;2016;{6};1;http://doramatv.ru/my_little_baby
+481;42895;Potato Star 2013QR3;4,39;44;1;2013;{7,1,6,10};1;http://doramatv.ru/potato_star_2013qr3
+482;43308;Plus Nine Boys;4,19;45;1;2014;{7,1,6};1;http://doramatv.ru/plus_nine_boys
+483;43374;Hello Counselor ;4,29;42;1;2010;{37,1,92};0;
+484;5716;Thank You;4,17;42;1;2007;{6,7};1;http://doramatv.ru/thank_you
+485;29228;Haeundae Lovers;3,29;41;1;2012;{4,7,6,1};1;http://doramatv.ru/haeundae_lovers
+486;35348;Jungle Fish 2;3,96;44;1;2010;{2,6};1;http://doramatv.ru/jungle_fish_2
+487;39755;Mnet Asian Music Awards (MAMA);4,53;41;1;2013;{32};0;
+488;6804;Hello, My Lady!;3,65;42;1;2007;{7,6};1;http://doramatv.ru/hello__miss
+489;24485;Princess Ja Myung Go;4,23;40;1;2009;{45,6};1;http://doramatv.ru/princess_ja_myung_go
+490;26410;A Thousand Days' Promise;4;42;1;2011;{6,7};1;http://doramatv.ru/a_thousand_days_promise
+491;33883;Heroes ;4,22;43;1;2010;{1};0;
+492;35739;The Man Who Can't Get Married;4,05;45;1;2009;{6,7,1};1;http://doramatv.ru/the_man_who_can_t_get_married
+493;48365;Heaven's Promise;3,55;42;1;2016;{6,7,28};1;http://doramatv.ru/heaven_s_promise
+494;51558;GOT7ing;4,39;42;1;2016;\N;0;
+495;2797;Spring Waltz;3,92;41;1;2006;{6};1;http://doramatv.ru/spring_waltz
+496;34639;Unemployed Romance;2,95;39;1;2013;{1,7};1;http://doramatv.ru/unemployed_romance
+497;37709;Endless Love;4;40;1;2014;{28,36,6,4,26,7,45};1;http://doramatv.ru/endless_love
+498;43458;Feel So Goods;4;39;1;2015;{37,75};0;
+499;46110;City Hunter;4,38;41;1;2011;{4,26,7};1;http://doramatv.ru/city_hunter
+500;52199;Strong Woman Do Bong Soon;4,33;40;1;2017;{4,12,1};1;http://doramatv.ru/strong_woman_do_bong_soon
+501;14725;First Love of a Royal Prince;3,39;41;1;2004;{1,6};1;http://doramatv.ru/prince_s_first_love
+502;34647;Basketball (2013);4;41;1;2013;{6,4,44,7,45};1;http://doramatv.ru/basketball
+503;38781;Secret Door;3,5;41;1;2014;{5,36,6,45};1;http://doramatv.ru/secret_door
+504;41906;Style Log;4,47;39;2;2013;{57};0;
+505;42958;Shark;4,16;39;1;2013;{28,6,26};1;http://doramatv.ru/shark
+506;45276;Two Yoo Project: Sugar Man;4,61;38;1;2015;\N;0;
+507;43699;Girl of 0AM;3,57;40;1;2015;{7};1;http://doramatv.ru/midnight_s_girl
+508;45277;Please Take Care of My Refrigerator;4,29;38;1;2014;\N;0;
+509;3096;Which Star Are You From?;3,67;39;1;2006;{6};1;http://doramatv.ru/what_planet_are_you_from
+510;3474;Couple or Trouble;4,04;38;1;2006;{6};1;http://doramatv.ru/fantasy_couple
+511;32181;A Man Called God;4;39;1;2010;{4,6,28,7};1;http://doramatv.ru/a_man_called_god
+512;36038;Beyond the Clouds;3,71;38;1;2014;{6,26,4,7,28};1;http://doramatv.ru/beyond_the_clouds
+513;44622;Falling for Innocence;4,1;36;1;2015;{6,7,1};1;http://doramatv.ru/fall_in_love_with_soon_jung
+514;50526;Woman with a Suitcase;3,54;36;1;2016;{7,6};1;http://doramatv.ru/woman_with_a_suitcase
+515;51429;Ask Us Anything;4,54;36;1;2015;\N;0;
+516;34035;Passionate Love;3,5;36;1;2013;{10,7,6};1;http://doramatv.ru/passionate_love
+517;34786;Ugly Alert;4,06;35;1;2013;{10,6,7};1;http://doramatv.ru/ugly_alert
+518;37865;MBLAQ Idol Manager;4,1;35;1;2012;{37,1};0;
+519;41677;Fabulous Neighbor;3,22;38;1;2015;{10,7,6};1;http://doramatv.ru/enchanting_neighbor
+520;42922;The Musical;3,32;35;1;2011;{32,96,6};1;http://doramatv.ru/the_musical
+521;48731;The Flatterer;3,58;37;1;2015;{1,6};1;http://doramatv.ru/the_flatterer
+522;20752;Love of Thousands Years;3,56;38;1;2003;{6};1;http://doramatv.ru/thousand_years_of_love
+523;34042;My Daughter Seo Yeong;4,14;35;1;2012;{6,7,10};1;http://doramatv.ru/my_daughter_seo_young
+524;39737;The Genius;4,79;44;4;2013;\N;0;
+525;43272;Holy Land;3,82;36;1;2012;{28,4,6};1;http://doramatv.ru/holy_land
+526;43733;Hyoyeon's Million Likes;4,29;34;1;2015;{34,57};0;
+527;49296;Dear My Friends;4,64;36;1;2016;{1,10,6};1;http://doramatv.ru/dear_my_friends
+528;50011;Fan Heart Attack Idol TV;4,71;35;1;NA;\N;0;
+529;19264;Sweet Spy;3,77;35;1;2005;{6};1;http://doramatv.ru/sweet_spy
+530;19943;Stairway to Heaven;3,65;40;1;2003;{6};1;http://doramatv.ru/stairway_to_heaven
+531;28919;Smile, You;3,61;33;1;2010;{7,10,1};1;http://doramatv.ru/smile__you
+532;34645;King's Daughter, Soo Baek Hyang;4,2;37;1;2013;{36,6,7,45,10};1;http://doramatv.ru/king_s_daughter_soo_baek_hyang
+533;39690;Sweden Laundry;3,68;35;1;2014;{12,6,1};1;http://doramatv.ru/sweden_laundry
+534;43159;Jumping Girl;3,37;33;1;2015;{7,1};1;http://doramatv.ru/jumping_girl
+535;48795;Flower Boy Ramen Shop;4,29;35;1;2011;{1,6,7};1;http://doramatv.ru/flower_boy_ramen_shop
+536;49064;Flower Boys Next Door;4,45;35;1;2013;{6,7,1};1;http://doramatv.ru/flower_boy_next_door
+537;51603;Night Light;3,8;34;1;2016;{26,7,6};1;http://doramatv.ru/night_light
+538;2798;Let's Go, Sangdoo;3,71;32;1;2003;{6};1;http://doramatv.ru/let_s_go_to_school__sang_doo
+539;11328;My Fair Lady;3,31;35;1;2003;{7,6};1;http://doramatv.ru/my_fair_lady
+540;25648;My Country Calls / Secret Agent Miss Oh;3,68;34;1;2010;{7,1};1;http://doramatv.ru/my_country_calls
+541;36058;Wonderful Days;4,08;34;1;2014;{7,6,10};1;http://doramatv.ru/very_good_days
+542;38791;Another Parting;3,77;32;1;2014;{4,7,6};1;http://doramatv.ru/what_kind_of_goodbye
+543;45212;f(x)=1cm;4,58;34;1;2015;\N;0;http://doramatv.ru/f_x__1cm
+544;51799;Love for a Thousand More;4,1;37;1;2016;{7,32,6};1;http://doramatv.ru/love_for_a_thousand_more
+545;38783;Rosy Lovers;3,67;31;1;2014;{6,7,10};1;http://doramatv.ru/rosy_lovers
+546;41624;Family Outing [aka The Family Is Coming];3,11;33;1;2015;{7,1,10};1;http://doramatv.ru/the_family_is_coming
+547;42962;Flower of the Queen;3,4;31;1;2015;{7,6,10};1;http://doramatv.ru/equator_s_flower
+548;43134;Dating Alone;4,13;31;1;2014;{37,7};1;http://doramatv.ru/dating_alone
+549;43274;Hwajung;4,17;32;1;2015;{6,7};1;http://doramatv.ru/splendid_politics
+550;44270;Poseidon;3;33;1;2011;{6,4,105};1;http://doramatv.ru/poseidon
+551;50352;Boys24;4,44;31;1;2016;\N;0;
+552;50881;After the Show Ends;3,95;31;1;2016;{6,7};1;http://doramatv.ru/after_the_show_ends
+553;51749;BTS Gayo;4,46;34;1;NA;\N;0;
+554;30476;It's Alright, Daddy's Daughter;4,17;31;1;2010;{10,6};1;http://doramatv.ru/it_s_okay__daddy_s_girl
+555;41524;Maids;3,95;33;1;2014;{26,7,4,45};1;http://doramatv.ru/maids
+556;43069;Dream (SBS);3,93;31;1;2009;{7,44};1;http://doramatv.ru/dream
+557;43912;B1A4 One Fine Day;4,25;30;1;2014;{50,37};0;
+558;45134;Crime Scene;4,78;38;2;2014;\N;1;http://doramatv.ru/crime_scene
+559;48940;Match Up BLOCK B and B1A4;4,27;31;1;2011;\N;0;
+560;49625;Baek Hee Has Returned;4;30;1;2016;{10,6,1};1;http://doramatv.ru/baek_hee_has_returned
+561;12495;My 19 Years Old Sister In Law;3,69;30;1;2004;{6};1;http://doramatv.ru/my_sister_in_law_is_19
+562;34625;Melody of Love;4,1;30;1;2013;{10,7};1;http://doramatv.ru/melody_of_love
+563;38016;What's With This Family;4,36;30;1;2014;{10,1,7};1;http://doramatv.ru/what_happens_to_my_family
+564;41525;Seonam Girls High School Investigators;3,33;34;1;2014;{2,7,25,28};1;http://doramatv.ru/sunam_girls_high_school_detectives
+565;42236;Unkind Women;2,86;29;1;2015;{10,6};1;http://doramatv.ru/unkind_ladies
+566;44785;Channel Girls' Generation;4,44;30;1;2015;\N;0;
+567;51747;BTS on V App;4,64;32;1;2015;\N;0;
+568;34021;Powerful Opponents;4,12;28;1;2008;{6,7};1;http://doramatv.ru/powerful_opponents
+569;42387;Око дьявола;3,14;30;2;2014;{6,26};0;
+570;43141;Partner;3,29;29;1;2009;{6,7};1;http://doramatv.ru/partner
+571;45444;Mr. Back;4,06;29;1;2014;{12,7,6,1};1;http://doramatv.ru/mr__back
+572;47637;Jang Young Shil;4,75;29;1;2016;{6,45};1;http://doramatv.ru/jang_yeong_sil
+573;48743;My Lovely Girl;3,91;29;1;2014;{32,6,7};1;http://doramatv.ru/too_lovely_girl_for_me
+574;1957;One Fine Day;3,3;32;1;2006;{6};1;http://doramatv.ru/one_fine_day
+575;6341;Green Rose (KR);3,67;27;1;2005;{25,6};1;http://doramatv.ru/green_rose
+576;35987;Can We Love?;4,13;27;1;2014;{7,10,1};1;http://doramatv.ru/can_we_love
+577;36948;Golden Cross;3,75;28;1;2014;{26,6};1;http://doramatv.ru/golden_cross
+578;39819;Punch (2014);4;27;1;2014;{26,36,7,6};1;http://doramatv.ru/punch__2014
+579;41866;My Heart Twinkle Twinkle;3,14;27;1;2015;{10,7,6};1;http://doramatv.ru/my_heart_twinkle_twinkle
+580;44475;Late Night Restaurant;4,75;28;1;2015;{25,6};1;http://doramatv.ru/late_night_restaurant
+581;44753;My Love from Another Star;4,32;36;1;2013;{7,6,1};1;http://doramatv.ru/man_from_the_stars
+582;48897;My Lawyer, Mr. Jo;4;30;1;2016;{6,114};1;http://doramatv.ru/neighborhood_lawyer_jo_deul_ho
+583;48969;Master: God of Noodles;4,38;28;1;2016;{6,7};1;http://doramatv.ru/master__god_of_noodles
+584;13463;Smile Again;4,08;26;1;2006;{6};1;http://doramatv.ru/smile_again
+585;29374;Creating Destiny;3,78;26;1;2009;{7,10};1;http://doramatv.ru/creating_destiny
+586;35989;One Warm Word;3,18;27;1;2013;{6,26,10,7,25};1;http://doramatv.ru/one_warm_word
+587;38560;Super Idol Chartshow;3,64;27;1;2014;{1,37,32};0;
+588;39388;Sweet Secret;2,83;26;1;2014;{7,10};1;http://doramatv.ru/sweet_secrets
+589;42151;Amazing f(x);4,56;26;1;2013;{1,37,50};0;
+590;44232;Apink's Showtime;4;26;1;2014;{37};0;
+591;6972;My Love Patzzi;4;27;1;2002;{6};1;http://doramatv.ru/my_love_patzzi
+592;8306;The Dance in the Sky;4,23;27;1;2008;{12,6,4,7};1;http://doramatv.ru/bichunmoo_flying_heavenly_dance
+593;8311;Little Bride;3,93;27;1;2004;{6};1;http://doramatv.ru/my_little_bride
+594;43339;Swallow the Sun;4,55;26;1;2009;{7,6,4};1;http://doramatv.ru/swallow_the_sun
+595;43794;My Love Eundong - The Beginning;3,82;27;1;2015;{7};1;http://doramatv.ru/my_love_eun_dong___the_beginning
+596;44355;The Virtual Bride;3,55;26;1;2015;{10,1};1;http://doramatv.ru/the_eccentric_daughter_in_law
+597;49330;The Flower in Prison;4,25;26;1;2016;{6,45};1;http://doramatv.ru/the_flower_in_prison
+598;51688;B.A.P's One Fine Day;4,67;25;1;2016;\N;0;
+599;6817;Marrying A Millionaire;3,4;24;1;2005;{6,1};1;http://doramatv.ru/marrying_a_millionaire
+600;34788;Mamma Mia ;3,75;25;1;2013;{37,1};0;
+601;35658;Romance Town;3,5;24;1;2011;{1,6,7};1;http://doramatv.ru/romance_town
+602;35840;Cool Kiz On The Block;3,56;25;1;2013;{10,37,44,1};0;
+603;39799;Golden Time;4;25;1;2012;{6,35};1;http://doramatv.ru/golden_time
+604;43873;Bachelor's Vegetable Store;3,9;24;1;2011;{6,1,7};1;http://doramatv.ru/bachelor_s_vegetable_store
+605;44744;Heartless City;4,2;29;1;2013;{28,26,4};1;http://doramatv.ru/cruel_city
+606;52008;Lipstick Prince;4,5;27;1;2016;\N;0;
+607;4163;Cat on the Roof;3,47;24;1;2003;{6};1;http://doramatv.ru/rooftop_room_cat
+608;7738;Save The Last Dance For Me;3,7;24;1;2004;{6};1;http://doramatv.ru/save_the_last_dance_for_me
+609;29537;The Kingdom of The Winds;4,45;28;1;2008;{45,12};1;http://doramatv.ru/the_kingdom_of_the_winds
+610;32946;The Gumiho's Revenge;3,91;24;1;2010;{7,6,25,26};1;http://doramatv.ru/the_gumiho_s_revenge
+611;39035;Joseon X-Files: Secret Book;3,83;27;1;2010;{45,9};1;http://doramatv.ru/joseon_x_files
+612;39129;Family Secrets (2014);4;23;1;2014;{10,7};1;http://doramatv.ru/family_secrets
+613;41979;I Summon You, Gold;3,33;24;1;2013;{7,1,10};1;http://doramatv.ru/i_summon_you__gold
+614;42235;Bluebird House;3,64;23;1;2015;{6,10};1;http://doramatv.ru/blue_bird_s_house
+615;48041;My Son-in-Law's Woman;3,5;26;1;2016;{10,6};1;http://doramatv.ru/my_son_in_law_s_woman
+616;49233;Babysitter;4,5;25;1;2016;{6,25,26};1;http://doramatv.ru/babysitter
+617;49571;Pentagon Maker;4;23;1;2016;\N;0;
+618;51431;Law of the Jungle;4,43;25;29;2011;\N;0;
+619;52243;Run! BTS!;4,36;27;1;NA;\N;0;
+620;6292;Only You;3,27;23;1;2005;{56,6};1;http://doramatv.ru/only_you
+621;37396;The 101st Proposal;3,45;26;1;2006;{6};1;http://doramatv.ru/101st_proposal__korea_
+622;39652;Mystery 6;4;24;1;2006;{30,25,37};1;
+623;48205;Crime Squad;3,73;24;1;2011;\N;1;http://doramatv.ru/crime_squad
+624;49639;1 Night 2 Days;4,92;24;3;2007;\N;0;
+625;8922;Wonderful Life (KR);3,5;22;1;2005;{6,1,10};1;http://doramatv.ru/wonderful_life
+626;16338;Air City;3,33;26;1;2007;{7,6};1;http://doramatv.ru/air_city
+627;20465;Ja Myung Go;4;21;1;2009;{7,45};1;http://doramatv.ru/princess_ja_myung_go
+628;22847;Fireworks;3,13;21;1;2006;{6};1;http://doramatv.ru/exhibition_of_fireworks
+629;23235;Sad Love Story;4;22;1;2005;{6,32};1;http://doramatv.ru/sad_love_story
+630;29096;Feast of Gods;3,71;24;1;2012;{7};1;http://doramatv.ru/feast_of_the_gods
+631;31075;Lovers in Paris;3,36;24;1;2004;{6};1;http://doramatv.ru/lovers_in_paris
+632;37627;My Dear Cat;3,45;21;1;2014;{7,10,1};1;http://doramatv.ru/my_dear_cat
+633;38335;Sign;4,4;22;1;2011;{35,28,6};1;http://doramatv.ru/sign
+634;38415;Mama (SK);3,67;21;1;2014;{10,7};1;http://doramatv.ru/mama
+635;42804;Let's Go Dream Team ;3,91;22;2;1999;{44,37};0;
+636;42914;Hyuna Free Month;4,27;23;1;2014;{32,34};0;
+637;43852;100 Points Out of 100;3,94;21;1;2010;{1,37};1;http://doramatv.ru/o__my_school
+638;44478;All About My Mom;4;21;1;2015;{5,6,10};1;http://doramatv.ru/all_about_my_mom
+639;48811;Discovery of Romance;3,58;22;1;2014;{7,1,6};1;http://doramatv.ru/discovery_of_love
+640;6816;When A Man Loves A Woman;3,29;20;1;2004;{6};1;http://doramatv.ru/when_a_man_is_in_love
+641;21167;Bright Girls Success;3,1;20;1;2002;{6};1;http://doramatv.ru/successful_story_of_a_bright_girl
+642;32055;Us & Them;3,32;138;1;2014;{1};1;
+643;36311;Wild Chives and Soy Bean Soup: 12 Years Reunion;3,75;21;1;2014;{7};1;http://doramatv.ru/wild_chives_and_soy_bean_soup__12_years_reunion
+644;42449;Healing Camp, Aren't You Happy;4;20;1;2011;{37,54};0;
+645;42989;All My Love;4,09;21;1;2010;{6,1};1;http://doramatv.ru/all_my_love
+646;44663;Heaven's Will: The Fugitive of Joseon;3,6;20;1;2013;{6,26,45,7};1;http://doramatv.ru/heaven_s_will__the_fugitive_of_joseon
+647;45138;Exactly What's Going On;3,33;20;1;2015;{1,7,12};1;http://doramatv.ru/exactly_what_s_going_on
+648;48924;Five Children;4,17;23;1;2016;{10,6,7};1;http://doramatv.ru/five_children
+649;48949;Match Up Special: Block B in Japan;4,17;21;1;2011;\N;0;
+650;52232;Rebel: Thief Who Stole the People;4,75;20;1;2017;{6,45};1;http://doramatv.ru/rebel__thief_who_stole_the_people
+651;6584;Ju Mong;4,79;26;1;2006;{6};1;http://doramatv.ru/the_book_of_three_han__the_chapter_of_joo_mong
+652;20757;Romance (KR);4;19;1;2002;{6};1;http://doramatv.ru/romance
+653;32416;Lovers in Prague;4,81;63;1;2005;{6};1;http://doramatv.ru/lovers_in_prague
+654;32498;Last Scandal;3,5;19;1;2008;{6,1,7};1;http://doramatv.ru/the_last_scandal
+655;36943;Come! Jang Bo Ri;4,83;19;1;2014;{7,10};1;http://doramatv.ru/come__jang_bo_ri
+656;43949;Assembly;3,75;19;1;2015;{6};1;http://doramatv.ru/assembly__2015_
+657;44214;Last;3,75;19;1;2015;{28,4,26};1;http://doramatv.ru/last
+658;49073;The Thorn Birds;4,43;22;1;2011;{7,6};1;http://doramatv.ru/the_thorn_bird
+659;51391;The Day After We Broke Up;4,6;19;1;2016;{32,6,7};1;http://doramatv.ru/i_want_to_protect_you__one_more_time_
+660;15429;Alone in Love;4,25;19;1;2006;{6};1;http://doramatv.ru/alone_in_love
+661;15939;Summer Scent;3,6;20;1;2003;{6};1;http://doramatv.ru/summer_scent
+662;29165;90 Days, Time to Love;4,14;18;1;2006;{6};1;http://doramatv.ru/90_days__time_to_love
+663;30903;Superstar K;4,43;19;3;2009;{38,11,32};0;
+664;31625;Come on over;4,56;19;1;2012;{37,32};0;
+665;41868;City of the Sun;4,5;18;1;2015;{6};1;http://doramatv.ru/city_of_the_sun
+666;50277;The Collaboration;4,5;18;1;2016;\N;0;
+667;50515;Mamamoo x GFriend Showtime;4,44;20;1;2016;\N;0;
+668;51556;GOT7 on V app;5;18;1;2015;\N;0;
+669;51590;What's Up with These Kids!?;3;19;1;2016;{6,7};1;http://doramatv.ru/what_s_with_money_
+670;52241;Ruby Ruby Love;4,13;19;1;2017;{1,6,7};1;http://doramatv.ru/ruby_ruby_love
+671;22080;Lovers;4;17;1;2001;{1,6};1;http://doramatv.ru/lovers
+672;29321;Hotelier;3,83;19;1;2001;{97,6};1;http://doramatv.ru/hotelier
+673;43160;Road Number One;3,75;18;1;2010;{7,6,4};1;http://doramatv.ru/road_number_one
+674;45462;Will It Snow at Christmas?;3,5;17;1;2009;\N;1;http://doramatv.ru/will_it_snow_at_christmas
+675;48288;Iron Man;3,25;18;1;2014;{7,12,6};1;http://doramatv.ru/iron_man
+676;52355;New Journey to the West;4,75;17;3;2015;\N;1;http://doramatv.ru/new_journey_to_the_west
+677;11727;Revenge (KR);4,57;22;1;2005;{6};1;http://doramatv.ru/resurrection
+678;18912;Love Story in Harvard;3,83;16;1;2004;{6};1;http://doramatv.ru/love_story_in_harvard
+679;23585;Stained Glass;3,67;16;1;2004;{6};1;http://doramatv.ru/stained_glass
+680;24423;Flowers for My Life;3,17;16;1;2007;{6,7};1;http://doramatv.ru/flowers_for_my_life
+681;36054;Angel's Revenge;3,6;17;1;2014;{10,6,7};1;http://doramatv.ru/angel_s_revenge
+682;39828;Pororo The Little Penguin;3,8;24;6;2003;{10,18};1;
+683;42234;Jingbirok;3;16;1;2015;{6,45,27};1;http://doramatv.ru/the_jingbirok__a_memoir_of_imjin_war
+684;42892;Paemilli;4;17;1;2012;{1,10};1;http://doramatv.ru/shut_up_family
+685;43206;Little Mom Scandal;4;18;2;2008;{1,6};1;http://doramatv.ru/little_mom_scandal
+686;44938;The Awl;4,3;16;1;2015;{6};1;http://doramatv.ru/the_awl
+687;51206;Saimdang, Light's Diary;4;17;1;2016;{7,6,45};1;http://doramatv.ru/saimdang__light_s_diary
+688;51430;Hip Hop Tribe 2 : Game of Thrones;4;17;1;2016;\N;0;
+689;7739;Hello, God!;3,44;16;1;2006;{6};1;http://doramatv.ru/hello__god
+690;24929;Cinderella;3,88;18;1;1997;{6,10};1;
+691;27327;Crazy in Love;3,86;15;1;2007;{6,7};1;http://doramatv.ru/crazy_for_you
+692;30586;Family Honor;4,45;16;1;2008;{10,7};1;http://doramatv.ru/family_honor
+693;34624;The Woman Who Married Three Times;3,25;15;1;2013;{7,10};1;http://doramatv.ru/the_woman_who_married_three_times
+694;35205;Sandglass;4,4;15;1;1995;{6};1;http://doramatv.ru/sandglass
+695;39126;Apgujeong Midnight Sun;5;15;1;2014;{10,7,6};1;http://doramatv.ru/apgujeong_midnight_sun
+696;43946;Hot blood (JYP);4,63;15;1;2008;{96,37};0;
+697;44027;Heart a tag;4,6;15;1;2015;{37,34};0;
+698;47642;Witch's Castle;5;16;1;2015;{6,7,10};1;http://doramatv.ru/witch_s_castle
+699;47643;Yeah, That's How It Is;0;15;1;2016;{6,10};1;http://doramatv.ru/yeah__that_s_how_it_is
+700;48557;Happy Home;5;16;1;2016;{6,10};1;http://doramatv.ru/happy_home
+701;49290;Midas;3,5;15;1;2011;{6,7};1;http://doramatv.ru/midas
+702;52135;Seventeen One Fine Day;4,71;19;1;NA;\N;0;
+703;7687;Say You Love Me;3,29;15;1;2004;{6};1;http://doramatv.ru/say_you_love_me
+704;8261;Emperor of the Sea;3,83;17;1;2004;{6};1;http://doramatv.ru/emperor_of_the_sea
+705;12336;Queen of the Game;3,43;14;1;2006;{6};1;http://doramatv.ru/queen_of_the_game
+706;33951;A Hundred Year’s Inheritance;4,25;15;1;2013;{10,6,7};1;http://doramatv.ru/a_hundred_year_s_inheritance
+707;44077;Tae Wang Sa Shin Gi;3,8;18;1;2007;{5,45};1;http://doramatv.ru/the_story_of_the_first_king_s_four_gods
+708;44476;Dong Yi;4;16;1;2010;{1,7,45,6};1;http://doramatv.ru/dawn
+709;44615;My Daughter, Geum Sa Wol;4;14;1;2015;{10,6};1;http://doramatv.ru/my_daughter__geum_sa_wol
+710;49649;Real Men;4,8;14;2;2013;\N;1;http://doramatv.ru/real_man
+711;49812;The Unusual Family;4;15;1;2016;{6,10};1;http://doramatv.ru/strange_family
+712;50977;She is 200 Years Old;2,6;16;1;2015;{7,1,12};1;http://doramatv.ru/she_is_200_years_old
+713;52115;Click Your Heart;4;15;1;2016;{7,1};1;http://doramatv.ru/click_your_heart
+714;2799;Ireland;3;13;1;2004;{6};1;http://doramatv.ru/ireland
+715;10180;Princess Lulu;3,2;13;1;2005;{6};1;http://doramatv.ru/princess_lulu
+716;22252;Be Strong, Geum-soon;3,43;13;1;2005;{6};1;http://doramatv.ru/be_strong_geum_soon
+717;29229;Golden Bride;4;14;1;2007;{10,6,7};1;http://doramatv.ru/golden_bride
+718;32342;Star's Lovers;3,5;14;1;2008;{7};1;http://doramatv.ru/star_s_lovers
+719;32910;Star in My Heart;4;13;1;1997;{6};1;http://doramatv.ru/wish_upon_a_star
+720;36382;Welcome to the Show;3,88;13;1;2011;{37,1};0;
+721;37626;Cuckoo Nest;4;13;1;2014;{6};1;http://doramatv.ru/two_mothers
+722;47989;Twelve Men in a Year;3,33;13;1;2012;\N;1;http://doramatv.ru/twelve_men_in_a_year
+723;49216;Standby I.O.I;4,25;13;1;2016;\N;0;
+724;49705;d.o.b: Dance or Band;4,33;13;1;2016;\N;0;
+725;49821;Taste of Others;5;13;1;2015;\N;0;
+726;52344;Queen of the Ring;0;13;1;2017;{7,12};1;http://doramatv.ru/three_color_fantasy__queen_of_the_rings
+727;20798;Great Expectations;3,88;13;1;2006;{6};1;http://doramatv.ru/kindergarten_love
+728;27042;3 Leaf Clover;3,75;14;1;2005;{6};1;http://doramatv.ru/three_leaf_clover
+729;27297;Freeze;2,5;13;1;2006;{6,7,25,30,26};1;http://doramatv.ru/freeze
+730;30701;Hateful But Once Again;3,57;12;1;2009;{7,6};1;http://doramatv.ru/hateful_but_once_again
+731;35342;Gloria (Geulroria);3,57;12;1;2010;{6,7,10};1;http://doramatv.ru/gloria
+732;37257;King Gwanggaeto the Great;5;13;1;2011;{4,27};1;http://doramatv.ru/king_gwanggaeto_the_great
+733;37302;Yoo Na's Street;2,5;12;1;2014;{1,7,10,28};1;http://doramatv.ru/yoo_na_s_street
+734;43555;Birth Of A Family;4,14;12;1;2011;{104,37,10};1;http://doramatv.ru/the_birth_of_a_family
+735;43995;ToppDogg 3 Days of Summer in Japan;4;12;1;2014;{37,5,34};0;
+736;47996;3 Days;3,5;14;1;2014;{4,25,28,7,26,6};1;http://doramatv.ru/3_days
+737;49072;The Birth of the Rich;3,8;12;1;2010;{7,6};1;http://doramatv.ru/birth_of_a_rich_man
+738;49678;Witch Yoo Hee;4;14;1;2007;{6,1,7};1;http://doramatv.ru/a_witch_in_love
+739;50397;Key's Knowhow;4,86;12;1;2015;\N;0;
+740;52343;Romance Full of Life;0;12;1;2017;{7,12};1;http://doramatv.ru/three_color_fantasy__romance_full_of_life
+741;2160;Beautiful Days;3,25;15;1;2001;{6};1;http://doramatv.ru/beautiful_days
+742;2753;Ice Girl;4,33;12;1;2005;{7,6};1;http://doramatv.ru/love_lost_in_time
+743;23951;Surgeon Bong Dal Hee;3,75;11;1;2007;{6};1;http://doramatv.ru/surgeon_bong_dal_hee
+744;25649;My Happy Home / My Sweet Home;3,67;11;1;2010;{6,25};1;http://doramatv.ru/my_happy_home
+745;42835;Thank You My Son;3,33;11;1;2015;{10,6,1};1;http://doramatv.ru/thank_you__son
+746;44426;I am A Man ;4,33;11;1;2014;{54};1;http://doramatv.ru/i_am_a_man
+747;45114;The Merchant: Gaekju 2015;3;11;1;2015;{6,45};1;http://doramatv.ru/god_of_trade___innkeeper_2015
+748;45346;A Well Grown Daughter, Hana;3,8;13;1;2013;{7,10,6};1;http://doramatv.ru/a_well_grown_daughter__hana
+749;46058;Detectives of Seonam Girls' High School;3,2;12;1;2014;{7,25};1;http://doramatv.ru/sunam_girls_high_school_detectives
+750;48444;Start Love;3,43;11;1;2015;{7,1};1;http://doramatv.ru/start_love
+751;49158;God of Study;4,17;11;1;2010;{7,1,6};1;http://doramatv.ru/god_of_study
+752;49345;Cinderella's Sister;3,4;11;1;2010;{7,6};1;http://doramatv.ru/cinderella_s_sister
+753;49368;Heartstrings;4,29;11;1;2011;{7,6,1,32};1;http://doramatv.ru/heartstrings
+754;50325;Lily Fever;3,14;12;1;2015;{6,7};1;http://doramatv.ru/lily_fever
+755;50444;Rising! Up10tion;4,63;11;1;2015;\N;0;
+756;50774;Korea's Next Top Model;4,25;13;5;2010;\N;0;
+757;51372;Father, I'll Take Care of You;3;11;1;2016;{10,6};1;http://doramatv.ru/father__i_ll_take_care_of_you
+758;51472;Twice TV;4,5;11;4;2015;\N;0;
+759;51585;My Fair Lady;5;11;1;2016;{6,10};1;
+760;51602;The Sound of Your Heart;4,5;15;1;2016;{6,1};1;http://doramatv.ru/the_sound_of_your_heart
+761;51809;To Be Continued;3,4;12;1;2015;{12,7};1;http://doramatv.ru/to_be_continued
+762;20637;Bad Boys (KR);2;11;1;2000;{6};0;
+763;23042;MAGIC;3;12;1;2004;{6};1;http://doramatv.ru/magic
+764;31611;Robber;3,6;10;1;2008;{1,7};1;http://doramatv.ru/robber
+765;36314;Mother's Garden;3,67;10;1;2014;{7};1;http://doramatv.ru/mother_s_garden
+766;36978;A Man's Story;4,4;10;1;2009;{6,4,7};1;http://doramatv.ru/the_slingshot
+767;42636;Singer Game (Mnet);3,4;10;1;2014;{32,96,37};0;
+768;43472;MTV Beast Almighty;4,2;10;1;2010;{37,32,54,34};0;
+769;43863;Smile, Dong Hae;4,5;10;1;2010;{6,10};1;http://doramatv.ru/smile__dong_hae
+770;44002;Kara Project;3,57;10;1;2014;{32,37};0;
+771;47342;Gunman in Joseon;4;10;1;2014;{45,6,4,7,26};1;http://doramatv.ru/the_joseon_shooter
+772;48297;Sweet Temptation;3,67;12;1;2015;\N;1;http://doramatv.ru/sweet_temptation
+773;49095;1% of Anything;3,57;12;1;2003;{1,6,7};1;http://doramatv.ru/something_about_1
+774;50544;You Are a Gift;1,5;10;1;2016;{7,6};1;http://doramatv.ru/you_are_a_gift
+775;51401;Momin's Room;3,75;10;1;2016;{10,7,6};1;http://doramatv.ru/momin_s_room
+776;51940;ASTRO Project;4,25;10;1;2016;\N;0;
