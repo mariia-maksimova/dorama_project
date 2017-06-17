@@ -353,9 +353,10 @@ server = (function(input, output,session) {
                       ) 
 
                     
-                  
-                     dramas2<<-select(dramas2, round(rating,2), dorama_title, dorama_myshows, doramatv)
-                    
+                    dramas2$rating<-round(dramas2$rating,2)
+                    dramas2<<-select(dramas2, SuitsYou=rating, Title=dorama_title,MyShows=dorama_myshows, DoramaTV=doramatv, PeopleWatch=watching)
+         #           colnames(dramas2)<<-c("SuitsYou", "Title", "MyShows", "DoramaTV", "PeopleWatch")
+
                     
                   })
                   
